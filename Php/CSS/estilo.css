@@ -1,0 +1,103 @@
+header{
+	Position:absolute;
+	Top:0%;
+	left:0%;
+	right:0%;
+	bottom:90%;
+	
+	
+
+
+	
+}
+aside{
+	Position:absolute;
+	Top:35%;
+	left:0%;
+	right:0%;
+	
+	
+	
+}
+.Logo{
+	width:200px;
+	height:100px;
+	Position:absolute;
+	left:35%;
+}
+.nome{
+	Font-size:40px;
+	font-style:italic;
+	position:absolute;
+	left:46%;
+	color:#4682B4;
+}
+nav{
+	Position:absolute;
+	Top:15%;
+	left:0%;
+	right:0%;
+	background-color:black;
+	
+}
+.Computadores{
+			Font-size:30px;
+			Font-family:Comic Sans MS;
+			Position:absolute;	
+			Left:10%;
+}
+.Notbooks{
+			Font-size:30px;
+			Font-family:Comic Sans MS;
+			Position:absolute;	
+			Left:30%;
+}
+.Monitores{
+			Font-size:30px;
+			Font-family:Comic Sans MS;
+			Position:absolute;	
+			Left:50%;
+}
+.Perifericos{
+			Font-size:30px;
+			Font-family:Comic Sans MS;
+			Position:absolute;	
+			Left:70%;
+}
+.PC1{
+	Whidht:150px;
+	height:250px;
+	position:absolute;
+	Top:90%;
+	left:20%;
+	
+}
+.PC2{
+	Whidht:150px;
+	height:250px;
+	position:absolute;
+	Top:90%;
+	left:50%;
+	
+}
+.PC3{
+	Whidht:150px;
+	height:250px;
+	position:absolute;
+	Top:90%;
+	left:70%;
+	
+}
+.PC4{
+	Whidht:150px;
+	height:250px;
+	
+}
+.PC5{
+	Whidht:150px;
+	height:250px;
+}
+.PC6{
+	Whidht:150px;
+	height:250px;
+}
