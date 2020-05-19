@@ -93,7 +93,7 @@
 
       <ul class="list-unstyled components">
         <li class="active">
-          <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">Login</a>
+        <a href="login.php">Login</a>
         </li>
         <li>
           <a href="#">Crie sua conta</a>
