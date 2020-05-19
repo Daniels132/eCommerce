@@ -40,8 +40,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.dataGridView = new System.Windows.Forms.DataGridView();
-            this.btnSalvar = new System.Windows.Forms.Button();
-            this.btnExcluir = new System.Windows.Forms.Button();
             this.btnExibir = new System.Windows.Forms.Button();
             this.mkdContrato = new System.Windows.Forms.MaskedTextBox();
             this.mkdTelefone = new System.Windows.Forms.MaskedTextBox();
@@ -49,6 +47,8 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtId = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -163,35 +163,15 @@
             this.dataGridView.Size = new System.Drawing.Size(543, 260);
             this.dataGridView.TabIndex = 2;
             // 
-            // btnSalvar
-            // 
-            this.btnSalvar.Enabled = false;
-            this.btnSalvar.Location = new System.Drawing.Point(570, 268);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(75, 29);
-            this.btnSalvar.TabIndex = 3;
-            this.btnSalvar.Text = "Salvar";
-            this.btnSalvar.UseVisualStyleBackColor = true;
-            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
-            // 
-            // btnExcluir
-            // 
-            this.btnExcluir.Location = new System.Drawing.Point(6, 62);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(69, 32);
-            this.btnExcluir.TabIndex = 3;
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = true;
-            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
-            // 
             // btnExibir
             // 
+            this.btnExibir.BackColor = System.Drawing.Color.White;
             this.btnExibir.Location = new System.Drawing.Point(570, 339);
             this.btnExibir.Name = "btnExibir";
             this.btnExibir.Size = new System.Drawing.Size(75, 31);
             this.btnExibir.TabIndex = 3;
             this.btnExibir.Text = "Exibir";
-            this.btnExibir.UseVisualStyleBackColor = true;
+            this.btnExibir.UseVisualStyleBackColor = false;
             this.btnExibir.Click += new System.EventHandler(this.btnExibir_Click);
             // 
             // mkdContrato
@@ -226,15 +206,15 @@
             this.groupBox1.Controls.Add(this.txtId);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.btnExcluir);
-            this.groupBox1.Location = new System.Drawing.Point(564, 408);
+            this.groupBox1.Location = new System.Drawing.Point(564, 376);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(81, 100);
+            this.groupBox1.Size = new System.Drawing.Size(81, 132);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(6, 36);
+            this.txtId.Location = new System.Drawing.Point(20, 36);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(35, 20);
             this.txtId.TabIndex = 5;
@@ -243,11 +223,34 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(6, 20);
+            this.label8.Location = new System.Drawing.Point(26, 18);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(17, 15);
             this.label8.TabIndex = 4;
             this.label8.Text = "Id";
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.BackColor = System.Drawing.Color.White;
+            this.btnExcluir.Image = global::Ecommerce.Properties.Resources.del;
+            this.btnExcluir.Location = new System.Drawing.Point(6, 62);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(69, 54);
+            this.btnExcluir.TabIndex = 3;
+            this.btnExcluir.UseVisualStyleBackColor = false;
+            this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
+            // 
+            // btnSalvar
+            // 
+            this.btnSalvar.BackColor = System.Drawing.Color.White;
+            this.btnSalvar.Enabled = false;
+            this.btnSalvar.Image = global::Ecommerce.Properties.Resources.add;
+            this.btnSalvar.Location = new System.Drawing.Point(570, 268);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(75, 52);
+            this.btnSalvar.TabIndex = 3;
+            this.btnSalvar.UseVisualStyleBackColor = false;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // frm_fornecedor
             // 

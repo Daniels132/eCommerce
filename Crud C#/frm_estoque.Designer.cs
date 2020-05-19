@@ -63,13 +63,14 @@
             // 
             // btnAdc
             // 
+            this.btnAdc.BackColor = System.Drawing.Color.White;
             this.btnAdc.Enabled = false;
-            this.btnAdc.Location = new System.Drawing.Point(20, 92);
+            this.btnAdc.Image = global::Ecommerce.Properties.Resources.add;
+            this.btnAdc.Location = new System.Drawing.Point(54, 92);
             this.btnAdc.Name = "btnAdc";
-            this.btnAdc.Size = new System.Drawing.Size(75, 23);
+            this.btnAdc.Size = new System.Drawing.Size(75, 58);
             this.btnAdc.TabIndex = 2;
-            this.btnAdc.Text = "Adicionar";
-            this.btnAdc.UseVisualStyleBackColor = true;
+            this.btnAdc.UseVisualStyleBackColor = false;
             this.btnAdc.Click += new System.EventHandler(this.btnAdc_Click);
             // 
             // txtQuantidade1
@@ -122,13 +123,14 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.BackColor = System.Drawing.Color.White;
             this.btnAdd.Enabled = false;
-            this.btnAdd.Location = new System.Drawing.Point(20, 92);
+            this.btnAdd.Image = global::Ecommerce.Properties.Resources.save;
+            this.btnAdd.Location = new System.Drawing.Point(52, 92);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(75, 23);
+            this.btnAdd.Size = new System.Drawing.Size(75, 58);
             this.btnAdd.TabIndex = 2;
-            this.btnAdd.Text = "Atualizar";
-            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtQuantidade2
@@ -175,12 +177,13 @@
             // 
             // btnExibir
             // 
+            this.btnExibir.BackColor = System.Drawing.Color.White;
             this.btnExibir.Location = new System.Drawing.Point(445, 213);
             this.btnExibir.Name = "btnExibir";
             this.btnExibir.Size = new System.Drawing.Size(75, 37);
             this.btnExibir.TabIndex = 2;
             this.btnExibir.Text = "Exibir";
-            this.btnExibir.UseVisualStyleBackColor = true;
+            this.btnExibir.UseVisualStyleBackColor = false;
             this.btnExibir.Click += new System.EventHandler(this.btnExibir_Click);
             // 
             // frm_estoque

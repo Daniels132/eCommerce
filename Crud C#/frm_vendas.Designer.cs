@@ -35,12 +35,13 @@
             // 
             // btnExibir
             // 
+            this.btnExibir.BackColor = System.Drawing.Color.White;
             this.btnExibir.Location = new System.Drawing.Point(220, 25);
             this.btnExibir.Name = "btnExibir";
             this.btnExibir.Size = new System.Drawing.Size(119, 41);
             this.btnExibir.TabIndex = 5;
             this.btnExibir.Text = "Exibir";
-            this.btnExibir.UseVisualStyleBackColor = true;
+            this.btnExibir.UseVisualStyleBackColor = false;
             this.btnExibir.Click += new System.EventHandler(this.btnExibir_Click);
             // 
             // dataGridView

@@ -35,11 +35,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.dataGridView = new System.Windows.Forms.DataGridView();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cbbStatus = new System.Windows.Forms.ComboBox();
+            this.txtIdAlterar = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.btnAlterar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.cbbStatus = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtIdAlterar = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -47,12 +47,13 @@
             // 
             // btnExibir
             // 
+            this.btnExibir.BackColor = System.Drawing.Color.White;
             this.btnExibir.Location = new System.Drawing.Point(144, 401);
             this.btnExibir.Name = "btnExibir";
             this.btnExibir.Size = new System.Drawing.Size(84, 36);
             this.btnExibir.TabIndex = 5;
             this.btnExibir.Text = "Exibir";
-            this.btnExibir.UseVisualStyleBackColor = true;
+            this.btnExibir.UseVisualStyleBackColor = false;
             // 
             // groupBox1
             // 
@@ -67,18 +68,19 @@
             // 
             // btnExcluir
             // 
+            this.btnExcluir.BackColor = System.Drawing.Color.White;
             this.btnExcluir.Enabled = false;
-            this.btnExcluir.Location = new System.Drawing.Point(9, 82);
+            this.btnExcluir.Image = global::Ecommerce.Properties.Resources.del;
+            this.btnExcluir.Location = new System.Drawing.Point(31, 86);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(75, 23);
+            this.btnExcluir.Size = new System.Drawing.Size(75, 55);
             this.btnExcluir.TabIndex = 2;
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.UseVisualStyleBackColor = false;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // txtId
             // 
-            this.txtId.Location = new System.Drawing.Point(9, 45);
+            this.txtId.Location = new System.Drawing.Point(42, 49);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(42, 20);
             this.txtId.TabIndex = 1;
@@ -88,7 +90,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 27);
+            this.label1.Location = new System.Drawing.Point(39, 31);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(17, 15);
             this.label1.TabIndex = 0;
@@ -109,31 +111,11 @@
             this.groupBox2.Controls.Add(this.label3);
             this.groupBox2.Controls.Add(this.btnAlterar);
             this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Location = new System.Drawing.Point(425, 189);
+            this.groupBox2.Location = new System.Drawing.Point(425, 207);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(146, 162);
+            this.groupBox2.Size = new System.Drawing.Size(146, 188);
             this.groupBox2.TabIndex = 4;
             this.groupBox2.TabStop = false;
-            // 
-            // btnAlterar
-            // 
-            this.btnAlterar.Location = new System.Drawing.Point(9, 123);
-            this.btnAlterar.Name = "btnAlterar";
-            this.btnAlterar.Size = new System.Drawing.Size(75, 23);
-            this.btnAlterar.TabIndex = 2;
-            this.btnAlterar.Text = "Alterar";
-            this.btnAlterar.UseVisualStyleBackColor = true;
-            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 73);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(135, 15);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Alterar status do pedido";
             // 
             // cbbStatus
             // 
@@ -141,28 +123,49 @@
             this.cbbStatus.Items.AddRange(new object[] {
             "E",
             "N"});
-            this.cbbStatus.Location = new System.Drawing.Point(9, 92);
+            this.cbbStatus.Location = new System.Drawing.Point(9, 106);
             this.cbbStatus.Name = "cbbStatus";
             this.cbbStatus.Size = new System.Drawing.Size(42, 21);
             this.cbbStatus.TabIndex = 3;
+            // 
+            // txtIdAlterar
+            // 
+            this.txtIdAlterar.Location = new System.Drawing.Point(9, 65);
+            this.txtIdAlterar.Name = "txtIdAlterar";
+            this.txtIdAlterar.Size = new System.Drawing.Size(42, 20);
+            this.txtIdAlterar.TabIndex = 1;
+            this.txtIdAlterar.TextChanged += new System.EventHandler(this.txtId_TextChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 22);
+            this.label3.Location = new System.Drawing.Point(6, 38);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(17, 15);
             this.label3.TabIndex = 0;
             this.label3.Text = "Id";
             // 
-            // txtIdAlterar
+            // btnAlterar
             // 
-            this.txtIdAlterar.Location = new System.Drawing.Point(9, 40);
-            this.txtIdAlterar.Name = "txtIdAlterar";
-            this.txtIdAlterar.Size = new System.Drawing.Size(42, 20);
-            this.txtIdAlterar.TabIndex = 1;
-            this.txtIdAlterar.TextChanged += new System.EventHandler(this.txtId_TextChanged);
+            this.btnAlterar.BackColor = System.Drawing.Color.White;
+            this.btnAlterar.Image = global::Ecommerce.Properties.Resources.save;
+            this.btnAlterar.Location = new System.Drawing.Point(31, 133);
+            this.btnAlterar.Name = "btnAlterar";
+            this.btnAlterar.Size = new System.Drawing.Size(75, 49);
+            this.btnAlterar.TabIndex = 2;
+            this.btnAlterar.UseVisualStyleBackColor = false;
+            this.btnAlterar.Click += new System.EventHandler(this.btnAlterar_Click);
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(6, 88);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(135, 15);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Alterar status do pedido";
             // 
             // frm_pedidos
             // 

@@ -129,23 +129,25 @@
             // 
             // btnSalvar
             // 
+            this.btnSalvar.BackColor = System.Drawing.Color.White;
             this.btnSalvar.Enabled = false;
-            this.btnSalvar.Location = new System.Drawing.Point(405, 205);
+            this.btnSalvar.Image = global::Ecommerce.Properties.Resources.add;
+            this.btnSalvar.Location = new System.Drawing.Point(405, 170);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(75, 35);
+            this.btnSalvar.Size = new System.Drawing.Size(75, 53);
             this.btnSalvar.TabIndex = 3;
-            this.btnSalvar.Text = "Salvar";
-            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.UseVisualStyleBackColor = false;
             this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnExibir
             // 
+            this.btnExibir.BackColor = System.Drawing.Color.White;
             this.btnExibir.Location = new System.Drawing.Point(405, 264);
             this.btnExibir.Name = "btnExibir";
             this.btnExibir.Size = new System.Drawing.Size(75, 35);
             this.btnExibir.TabIndex = 3;
             this.btnExibir.Text = "Exibir";
-            this.btnExibir.UseVisualStyleBackColor = true;
+            this.btnExibir.UseVisualStyleBackColor = false;
             this.btnExibir.Click += new System.EventHandler(this.btnExibir_Click);
             // 
             // groupBox1
@@ -155,7 +157,7 @@
             this.groupBox1.Controls.Add(this.txtIdProduto);
             this.groupBox1.Location = new System.Drawing.Point(394, 334);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(115, 116);
+            this.groupBox1.Size = new System.Drawing.Size(115, 129);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             // 
@@ -171,13 +173,14 @@
             // 
             // btnExcluir
             // 
+            this.btnExcluir.BackColor = System.Drawing.Color.White;
             this.btnExcluir.Enabled = false;
-            this.btnExcluir.Location = new System.Drawing.Point(6, 75);
+            this.btnExcluir.Image = global::Ecommerce.Properties.Resources.del;
+            this.btnExcluir.Location = new System.Drawing.Point(11, 75);
             this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(75, 35);
+            this.btnExcluir.Size = new System.Drawing.Size(75, 48);
             this.btnExcluir.TabIndex = 3;
-            this.btnExcluir.Text = "Excluir";
-            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.UseVisualStyleBackColor = false;
             this.btnExcluir.Click += new System.EventHandler(this.btnExcluir_Click);
             // 
             // txtIdProduto

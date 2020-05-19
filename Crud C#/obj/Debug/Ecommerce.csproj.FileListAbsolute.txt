@@ -19,3 +19,24 @@ C:\Users\Rafael\Projeto\E-commerce\Ecommerce\obj\Debug\Ecommerce.frm_estoque.res
 C:\Users\Rafael\Projeto\E-commerce\Ecommerce\obj\Debug\Ecommerce.frm_produtos.resources
 C:\Users\Rafael\Projeto\E-commerce\Ecommerce\obj\Debug\Ecommerce.frm_vendas.resources
 C:\Users\Rafael\Projeto\E-commerce\Ecommerce\obj\Debug\Ecommerce.frm_pedidos.resources
+C:\Users\Rafael\Projeto\E-commerce\Crud C#\bin\Debug\Ecommerce.exe.config
+C:\Users\Rafael\Projeto\E-commerce\Crud C#\bin\Debug\Ecommerce.exe
+C:\Users\Rafael\Projeto\E-commerce\Crud C#\bin\Debug\Ecommerce.pdb
+C:\Users\Rafael\Projeto\E-commerce\Crud C#\bin\Debug\MySql.Data.dll
+C:\Users\Rafael\Projeto\E-commerce\Crud C#\bin\Debug\Google.Protobuf.dll
+C:\Users\Rafael\Projeto\E-commerce\Crud C#\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\Rafael\Projeto\E-commerce\Crud C#\bin\Debug\Ubiety.Dns.Core.dll
+C:\Users\Rafael\Projeto\E-commerce\Crud C#\bin\Debug\Renci.SshNet.dll
+C:\Users\Rafael\Projeto\E-commerce\Crud C#\obj\Debug\Ecommerce.csprojAssemblyReference.cache
+C:\Users\Rafael\Projeto\E-commerce\Crud C#\obj\Debug\Ecommerce.frm_clientes.resources
+C:\Users\Rafael\Projeto\E-commerce\Crud C#\obj\Debug\Ecommerce.frm_estoque.resources
+C:\Users\Rafael\Projeto\E-commerce\Crud C#\obj\Debug\Ecommerce.frm_fornecedor.resources
+C:\Users\Rafael\Projeto\E-commerce\Crud C#\obj\Debug\Ecommerce.frm_menu.resources
+C:\Users\Rafael\Projeto\E-commerce\Crud C#\obj\Debug\Ecommerce.frm_pedidos.resources
+C:\Users\Rafael\Projeto\E-commerce\Crud C#\obj\Debug\Ecommerce.frm_produtos.resources
+C:\Users\Rafael\Projeto\E-commerce\Crud C#\obj\Debug\Ecommerce.frm_vendas.resources
+C:\Users\Rafael\Projeto\E-commerce\Crud C#\obj\Debug\Ecommerce.Properties.Resources.resources
+C:\Users\Rafael\Projeto\E-commerce\Crud C#\obj\Debug\Ecommerce.csproj.GenerateResource.cache
+C:\Users\Rafael\Projeto\E-commerce\Crud C#\obj\Debug\Ecommerce.csproj.CopyComplete
+C:\Users\Rafael\Projeto\E-commerce\Crud C#\obj\Debug\Ecommerce.exe
+C:\Users\Rafael\Projeto\E-commerce\Crud C#\obj\Debug\Ecommerce.pdb
