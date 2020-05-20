@@ -1,207 +1,188 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+
 <!DOCTYPE html>
-<html>
-
 <head>
-	<meta charset="utf-8">
-	<link rel="stylesheet" href="../CSS/bootstrap.css">
-	<title>Login</title>
-	<link rel="shortcut icon" type="image/x-icon" href="../Imagens/Logo.jpg">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-		crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-		integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-		crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-		crossorigin="anonymous"></script>
-	<title>Login</title>
-	<style type="text/css">
-		* {
-			margin: 2px;
-			padding: 2px;
-		}
-	</style>
-	<script type="text/javascript">
-		function alerta() {
-			alert("Parabéns, você completou seu cadastro!");
-		}
-		function mudacor(obj, cor) {
-			obj.style.backgroundColor = cor;
-		}
-		function eventos() {
-			var obj1 = document.forms[0].elements[1];
-			var obj2 = document.forms[0].elements[2];
-			var obj3 = document.forms[1].elements[1];
-			var obj4 = document.forms[1].elements[2];
-			var obj5 = document.forms[1].elements[3];
-			var obj6 = document.forms[1].elements[4];
-			var obj7 = document.forms[1].elements[5];
-			var obj8 = document.forms[1].elements[6];
+<title>Cadastro</title>
+<link rel="shortcut icon" type="image/x-icon" href="../Imagens/Logo.png">
 
-			document.getElementById("botao").addEventListener("click", alerta);
-
-			obj1.addEventListener("mouseover", function (event) {
-				mudacor(obj1, "#ddd");
-			});
-			obj1.addEventListener("mouseout", function (event) {
-				mudacor(obj1, "#fff");
-			});
-			obj2.addEventListener("mouseover", function (event) {
-				mudacor(obj2, "#ddd");
-			});
-			obj2.addEventListener("mouseout", function (event) {
-				mudacor(obj2, "#fff");
-			});
-			obj3.addEventListener("mouseover", function (event) {
-				mudacor(obj3, "#ddd");
-			});
-			obj3.addEventListener("mouseout", function (event) {
-				mudacor(obj3, "#fff");
-			});
-			obj4.addEventListener("mouseover", function (event) {
-				mudacor(obj4, "#ddd");
-			});
-			obj4.addEventListener("mouseout", function (event) {
-				mudacor(obj4, "#fff");
-			});
-			obj5.addEventListener("mouseover", function (event) {
-				mudacor(obj5, "#ddd");
-			});
-			obj5.addEventListener("mouseout", function (event) {
-				mudacor(obj5, "#fff");
-			});
-			obj6.addEventListener("mouseover", function (event) {
-				mudacor(obj6, "#ddd");
-			});
-			obj6.addEventListener("mouseout", function (event) {
-				mudacor(obj6, "#fff");
-			});
-			obj7.addEventListener("mouseover", function (event) {
-				mudacor(obj7, "#ddd");
-			});
-			obj7.addEventListener("mouseout", function (event) {
-				mudacor(obj7, "#fff");
-			});
-			obj8.addEventListener("mouseover", function (event) {
-				mudacor(obj8, "#F5F5DC");
-			});
-			obj8.addEventListener("mouseout", function (event) {
-				mudacor(obj8, "#fff");
-			});
-		}
-		window.addEventListener("load", eventos);
-	</script>
+    
 </head>
-
 <body>
-	<form>
-		<fieldset>
-			<legend>Acesse sua conta</legend>
-			<div class="form-group">
-				<div class="row">
-					<div class="col">
-						<label for="exampleInputEmail1">Email</label>
-						<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-							placeholder="Coloque seu email">
-						<small id="emailHelp" class="form-text text-muted">Nós não vamos divulgar seu Email</small>
-					</div>
-					<div class="col">
 
-						<label for="exampleInputPassword1">Senha</label>
-						<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Senha">
-					</div>
-				</div>
-			</div>
-			<div class="form-group form-check">
-				<div class="row">
-					<div class="col">
-						<input type="checkbox" class="form-check-input" id="exampleCheck1">
-						<label class="form-check-label" for="exampleCheck1">Mantenha-me conectado</label>
-					</div>
-					<div class="col">
-						<a href="..\index.html"><button type="button" class="btn btn-primary">Entrar</button></a>
-					</div>
-				</div>
-			</div>
-		</fieldset>
-	</form>
-	<br><br>
-	<form>
-		<fieldset>
-			<legend>Crie sua conta</legend>
-			<div class="row">
-				<div class="col">
-					<label for="inputEmail4">Email</label>
-					<input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-				</div>
-				<div class="col">
-					<label for="inputPassword4">Senha</label>
-					<input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					<label for="inputAddress">Endereço</label>
-					<input type="text" class="form-control" id="inputAddress" placeholder="AV. Brasil 45">
-				</div>
-				<div class="col">
-					<label for="inputAddress2">Complemento</label>
-					<input type="text" class="form-control" id="inputAddress2" placeholder="Apartamento, Andar">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					<label for="inputCity">Cidade</label>
-					<input type="text" class="form-control" id="inputCity">
-				</div>
-				<div class="col">
-					<label for="inputState">Estado</label>
-					<select id="inputState" class="form-control">
-						<option selected>Escolha...</option>
-						<option>Acre (AC)</option>
-						<option>Alagoas (AL)</option>
-						<option>Amapá (AP)</option>
-						<option>Amazonas (AM)</option>
-						<option>Bahia (BA)</option>
-						<option>Ceará (CE)</option>
-						<option>Distrito Federal (DF)</option>
-						<option>Espírito Santo (ES)</option>
-						<option>Goiás (GO)</option>
-						<option>Maranhão (MA)</option>
-						<option>Mato Grosso (MT)</option>
-						<option>Mato Grosso do Sul (MS)</option>
-						<option>Minas Gerais (MG)</option>
-						<option>Pará (PA)</option>
-						<option>Paraíba (PB)</option>
-						<option>Paraná (PR)</option>
-						<option>Pernambuco (PE)</option>
-						<option>Piauí (PI)</option>
-						<option>Rio de Janeiro (RJ)</option>
-						<option>Rio Grande do Norte (RN)</option>
-						<option>Rio Grande do Sul (RS)</option>
-						<option>Rondônia (RO)</option>
-						<option>Roraima (RR)</option>
-						<option>Santa Catarina (SC)</option>
-						<option>São Paulo (SP)</option>
-						<option>Sergipe (SE)</option>
-						<option>Tocantins (TO)</option>
-					</select>
-				</div>
-			</div>
-			<div class="form-group">
-				<div class="form-check">
-					<input class="form-check-input" type="checkbox" id="gridCheck">
-					<label class="form-check-label" for="gridCheck">
-						Mantenha-me conectado
-					</label>
-				</div>
-			</div>
-		</fieldset>
-		<a href="..\index.php">
-			<button type="button" class="btn btn-primary" id="botao">Criar conta</button>
-		</a>
-	</form>
+<form class="form-horizontal">
+<fieldset>
+<div class="panel panel-primary">
+    <div class="panel-heading">Cadastro de Cliente</div>
+    
+    <div class="panel-body">
+<div class="form-group">
+
+<div class="col-md-11 control-label">
+        <p class="help-block"><h11>*</h11> Campo Obrigatório </p>
+</div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-2 control-label" for="Nome">Nome <h11>*</h11></label>  
+  <div class="col-md-8">
+  <input id="Nome" name="Nome" placeholder="" class="form-control input-md" required type="text">
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-2 control-label" for="Nome">CPF <h11>*</h11></label>  
+  <div class="col-md-2">
+  <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="11" pattern="[0-9]+$">
+  </div>
+  
+  <label class="col-md-1 control-label" for="Nome">Nascimento<h11>*</h11></label>  
+  <div class="col-md-2">
+  <input id="dtnasc" name="dtnasc" placeholder="DD/MM/AAAA" class="form-control input-md" required="" type="text" maxlength="10" OnKeyPress="formatar('##/##/####', this)" onBlur="showhide()">
+</div>
+
+<!-- Multiple Radios (inline) -->
+
+  <label class="col-md-1 control-label" for="radios">Sexo <h11>*</h11></label>
+  <div class="col-md-4"> 
+    <label required="" class="radio-inline" for="radios-0" >
+      <input name="sexo" id="sexo" value="feminino" type="radio" required>
+      Feminino
+    </label> 
+    <label class="radio-inline" for="radios-1">
+      <input name="sexo" id="sexo" value="masculino" type="radio">
+      Masculino
+    </label>
+  </div>
+</div>
+
+<!-- Prepended text-->
+<div class="form-group">
+  <label class="col-md-2 control-label" for="prependedtext">Telefone <h11>*</h11></label>
+  <div class="col-md-2">
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+      <input id="prependedtext" name="prependedtext" class="form-control" placeholder="XX XXXXX-XXXX" required="" type="text" maxlength="13" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
+      OnKeyPress="formatar('## #####-####', this)">
+    </div>
+  </div>
+  
+    <label class="col-md-1 control-label" for="prependedtext">Telefone</label>
+     <div class="col-md-2">
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+      <input id="prependedtext" name="prependedtext" class="form-control" placeholder="XX XXX-XXXX" type="text" maxlength="11"  pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$"
+      OnKeyPress="formatar('## #####-####', this)">
+    </div>
+  </div>
+ </div> 
+
+<!-- Prepended text-->
+<div class="form-group">
+  <label class="col-md-2 control-label" for="prependedtext">Email <h11>*</h11></label>
+  <div class="col-md-5">
+    <div class="input-group">
+      <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+      <input id="prependedtext" name="prependedtext" class="form-control" placeholder="email@email.com" required="" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" >
+    </div>
+  </div>
+</div>
+
+
+<!-- Search input-->
+<div class="form-group">
+  <label class="col-md-2 control-label" for="CEP">CEP <h11>*</h11></label>
+  <div class="col-md-2">
+    <input id="cep" name="cep" placeholder="Apenas números" class="form-control input-md" required="" value="" type="search" maxlength="8" pattern="[0-9]+$">
+  </div>
+  <div class="col-md-2">
+      <button type="button" class="btn btn-primary" onclick="pesquisacep(cep.value)">Pesquisar</button>
+    </div>
+</div>
+
+<!-- Prepended text-->
+<div class="form-group">
+  <label class="col-md-2 control-label" for="prependedtext">Endereço</label>
+  <div class="col-md-4">
+    <div class="input-group">
+      <span class="input-group-addon">Rua</span>
+      <input id="rua" name="rua" class="form-control" placeholder="" required="" readonly="readonly" type="text">
+    </div>
+    
+  </div>
+    <div class="col-md-2">
+    <div class="input-group">
+      <span class="input-group-addon">Nº <h11>*</h11></span>
+      <input id="numero" name="numero" class="form-control" placeholder="" required=""  type="text">
+    </div>
+    
+  </div>
+  
+  <div class="col-md-3">
+    <div class="input-group">
+      <span class="input-group-addon">Bairro</span>
+      <input id="bairro" name="bairro" class="form-control" placeholder="" required="" readonly="readonly" type="text">
+    </div>
+    
+  </div>
+</div>
+
+<div class="form-group">
+  <label class="col-md-2 control-label" for="prependedtext"></label>
+  <div class="col-md-4">
+    <div class="input-group">
+      <span class="input-group-addon">Cidade</span>
+      <input id="cidade" name="cidade" class="form-control" placeholder="" required=""  readonly="readonly" type="text">
+    </div>
+    
+  </div>
+  
+   <div class="col-md-2">
+    <div class="input-group">
+      <span class="input-group-addon">Estado</span>
+      <input id="estado" name="estado" class="form-control" placeholder="" required=""  readonly="readonly" type="text">
+    </div>
+    
+  </div>
+</div>
+
+  
+ 
+    
+  </div>
+</div>
+</div>
+
+  </div>
+ 
+ </div>
+ 
+  </div>
+
+<!--botão cadastro -->
+<div class="form-group">
+  <label class="col-md-2 control-label" for="Cadastrar"></label>
+  <div class="col-md-8">
+    <button id="Cadastrar" name="Cadastrar" class="btn btn-success" type="Submit">Cadastrar</button>
+    <a href="../index.php" button id="Cancelar" name="Cancelar" class="btn btn-danger" type="Reset">Cancelar</button></a>
+  </div>
+</div>
+
+</div>
+</div>
+
+
+</fieldset>
+</form>
+
 </body>
-
 </html>

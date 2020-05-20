@@ -64,10 +64,10 @@
 
 			<ul class="list-unstyled components">
 				<li class="active">
-				<a href="login.php">Login</a>
+					<a href="login.php">Login</a>
 				</li>
 				<li>
-					<a href="#">Crie sua conta</a>
+					<a href="Form.php">Crie sua conta</a>
 			</ul>
 		</nav>
 
@@ -144,7 +144,7 @@
 									</div>
 									<div class="modal-footer">
 										<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-										<a href="..\pag\Form.php"><button type="button" class="btn btn-primary">R$3.500,99</button></a>
+										<a href="#"><button type="button" class="btn btn-primary">R$3.500,99</button></a>
 									</div>
 								</div>
 							</div>
@@ -175,7 +175,7 @@
 									</div>
 									<div class="modal-footer">
 										<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-										<a href="..\pag\Form.php"><button type="button" class="btn btn-primary">R$3.500,99</button></a>
+										<a href="#"><button type="button" class="btn btn-primary">R$3.500,99</button></a>
 									</div>
 								</div>
 							</div>
@@ -206,7 +206,7 @@
 									</div>
 									<div class="modal-footer">
 										<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-										<a href="..\pag\Form.php"><button type="button" class="btn btn-primary">R$3.500,99</button></a>
+										<a href="#"><button type="button" class="btn btn-primary">R$3.500,99</button></a>
 									</div>
 								</div>
 							</div>
@@ -237,7 +237,7 @@
 									</div>
 									<div class="modal-footer">
 										<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-										<a href="..\pag\Form.php"><button type="button" class="btn btn-primary">R$3.500,99</button></a>
+										<a href="#"><button type="button" class="btn btn-primary">R$3.500,99</button></a>
 									</div>
 								</div>
 							</div>

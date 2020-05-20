@@ -34,7 +34,7 @@
 					<a href="pag/login.php">Login</a>
 				</li>
 				<li>
-					<a href="#">Crie sua conta</a>
+					<a href="pag/Form.php">Crie sua conta</a>
 			</ul>
 		</nav>
 

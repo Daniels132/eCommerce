@@ -13,24 +13,24 @@
 </head>
 
 <body>
-    <div class="wrapper fadeInDown">
-        <div id="formContent">
-            <div class="fadeIn first">
-                <img src="../Imagens/Logo.png" id="icon" />
-            </div>
-
-            <form>
-                <input type="text" id="login" class="fadeIn second" name="login" placeholder="CPF">
-                <input type="text" id="password" class="fadeIn third" name="login" placeholder="Senha">
-                <input type="submit" class="fadeIn fourth" value="Log In">
-            </form>
-
-            <div id="formFooter">
-                <a class="underlineHover" href="#">Crie uma conta</a>
-            </div>
-
-        </div>
+<div class="wrapper fadeInDown">
+  <div id="formContent">
+    <div class="fadeIn first">
+      <img src="../Imagens/Logo.png" id="icon"/>
     </div>
+
+    <form>
+      <input type="text" id="login" class="fadeIn second" name="login" placeholder="CPF">
+      <input type="text" id="password" class="fadeIn third" name="login" placeholder="Senha">
+      <input type="submit" class="fadeIn fourth" value="Log In">
+    </form>
+
+    <div id="formFooter">
+      <a class="underlineHover" href="Form.php">Crie uma conta</a>
+    </div>
+
+  </div>
+</div>
 </body>
 
 </html>
