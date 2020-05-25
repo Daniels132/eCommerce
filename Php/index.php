@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!doctype html>
 <html lang="pt-br">
 
@@ -24,7 +27,21 @@
 			<div id="dismiss">
 				<i class="fas fa-arrow-left"></i>
 			</div>
+			<?php
+			if(isset($_SESSION['usuario'])):
+			?>
+			<div class="sidebar-header">
+				<h3><?php echo $_SESSION['usuario']?></h3>
+			</div>
 
+			<ul class="list-unstyled components">
+				<li class="active">
+					<a href="pag/logout.php">Sair</a>
+				</li>
+			<?php
+			endif;
+			if(!isset($_SESSION['usuario'])):
+			?>
 			<div class="sidebar-header">
 				<h3>Entre na sua conta</h3>
 			</div>
@@ -36,6 +53,9 @@
 				<li>
 					<a href="pag/Form.php">Crie sua conta</a>
 			</ul>
+			<?php
+			endif;
+			?>
 		</nav>
 
 		<!-- Page Content -->
