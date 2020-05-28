@@ -71,39 +71,39 @@ session_start();
     <!-- Sidebar -->
     <nav id="sidebar">
 
-			<div id="dismiss">
-				<i class="fas fa-arrow-left"></i>
-			</div>
-			<?php
-			if(isset($_SESSION['usuario'])):
-			?>
-			<div class="sidebar-header">
-				<h3><?php echo $_SESSION['usuario']?></h3>
-			</div>
+      <div id="dismiss">
+        <i class="fas fa-arrow-left"></i>
+      </div>
+      <?php
+      if (isset($_SESSION['usuario'])) :
+      ?>
+        <div class="sidebar-header">
+          <h3><?php echo $_SESSION['usuario'] ?></h3>
+        </div>
 
-			<ul class="list-unstyled components">
-				<li class="active">
-					<a href="logout.php">Sair</a>
-				</li>
-			<?php
-			endif;
-			if(!isset($_SESSION['usuario'])):
-			?>
-			<div class="sidebar-header">
-				<h3>Entre na sua conta</h3>
-			</div>
+        <ul class="list-unstyled components">
+          <li class="active">
+            <a href="logout.php">Sair</a>
+          </li>
+        <?php
+      endif;
+      if (!isset($_SESSION['usuario'])) :
+        ?>
+          <div class="sidebar-header">
+            <h3>Entre na sua conta</h3>
+          </div>
 
-			<ul class="list-unstyled components">
-				<li class="active">
-					<a href="login.php">Login</a>
-				</li>
-				<li>
-					<a href="Form.php">Crie sua conta</a>
-			</ul>
-			<?php
-			endif;
-			?>
-		</nav>
+          <ul class="list-unstyled components">
+            <li class="active">
+              <a href="login.php">Login</a>
+            </li>
+            <li>
+              <a href="Form.php">Crie sua conta</a>
+          </ul>
+        <?php
+      endif;
+        ?>
+    </nav>
 
     <!-- Page Content -->
     <div id="content">
@@ -359,20 +359,20 @@ session_start();
             <!--Monitores-->
             <div class="container-fluid">
               <a data-toggle="modal" data-target="#Moni1">
-                <img src="../Imagens/Moni1.jpg" alt="..." class="img-thumbnail" id="img1" onmouseover="this.src='../Imagens/Moni1.1.jpg';" onmouseout="this.src='../Imagens/Moni1.jpg';">
+                <img src="../Imagens/Moni1.jpg" alt="..." class="img" class="img-thumbnail" id="img1" onmouseover="this.src='../Imagens/Moni1.1.jpg';" onmouseout="this.src='../Imagens/Moni1.jpg';">
               </a>
               <a data-toggle="modal" data-target="#Moni2">
-                <img src="../Imagens/Moni2.jpg" alt="..." class="img-thumbnail" id="img2" onmouseover="this.src='../Imagens/Moni2.1.jpg';" onmouseout="this.src='../Imagens/Moni2.jpg';">
+                <img src="../Imagens/Moni2.jpg" alt="..." class="img" class="img-thumbnail" id="img2" onmouseover="this.src='../Imagens/Moni2.1.jpg';" onmouseout="this.src='../Imagens/Moni2.jpg';">
               </a>
               <a data-toggle="modal" data-target="#Moni3">
-                <img src="../Imagens/Moni3.jpg" alt="..." class="img-thumbnail" id="img3" onmouseover="this.src='../Imagens/Moni3.1.jpg';" onmouseout="this.src='../Imagens/Moni3.jpg';">
+                <img src="../Imagens/Moni3.jpg" alt="..." class="img" class="img-thumbnail" id="img3" onmouseover="this.src='../Imagens/Moni3.1.jpg';" onmouseout="this.src='../Imagens/Moni3.jpg';">
                 <a data-toggle="modal" data-target="#Moni4">
-                  <img src="../Imagens/Moni4.jpg" alt="..." class="img-thumbnail" id="img4" onmouseover="this.src='../Imagens/Moni4.1.jpg';" onmouseout="this.src='../Imagens/Moni4.jpg';">
+                  <img src="../Imagens/Moni4.jpg" alt="..." class="img" class="img-thumbnail" id="img4" onmouseover="this.src='../Imagens/Moni4.1.jpg';" onmouseout="this.src='../Imagens/Moni4.jpg';">
                 </a>
                 <a data-toggle="modal" data-target="#Moni5">
-                  <img src="../Imagens/Moni5.jpg" alt="..." class="img-thumbnail" id="img5" onmouseover="this.src='../Imagens/Moni5.1.jpg';" onmouseout="this.src='../Imagens/Moni5.jpg';">
+                  <img src="../Imagens/Moni5.jpg" alt="..." class="img" class="img-thumbnail" id="img5" onmouseover="this.src='../Imagens/Moni5.1.jpg';" onmouseout="this.src='../Imagens/Moni5.jpg';">
                   <a data-toggle="modal" data-target="#Moni6">
-                    <img src="../Imagens/Moni6.jpg" alt="..." class="img-thumbnail" id="img6" onmouseover="this.src='../Imagens/Moni6.1.jpg';" onmouseout="this.src='../Imagens/Moni6.jpg';">
+                    <img src="../Imagens/Moni6.jpg" alt="..." class="img" class="img-thumbnail" id="img6" onmouseover="this.src='../Imagens/Moni6.1.jpg';" onmouseout="this.src='../Imagens/Moni6.jpg';">
                   </a>
             </div>
         </div>

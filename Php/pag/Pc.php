@@ -13,6 +13,11 @@ session_start();
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
+	<style>
+		input[type=text]{
+			display: none;
+		}
+	</style>
 	<script>
 		function mudacor(obj, img) {
 			obj.src = img;
@@ -69,34 +74,34 @@ session_start();
 				<i class="fas fa-arrow-left"></i>
 			</div>
 			<?php
-			if(isset($_SESSION['usuario'])):
+			if (isset($_SESSION['usuario'])) :
 			?>
-			<div class="sidebar-header">
-				<h3><?php echo $_SESSION['usuario']?></h3>
-			</div>
+				<div class="sidebar-header">
+					<h3><?php echo $_SESSION['usuario'] ?></h3>
+				</div>
 
-			<ul class="list-unstyled components">
-				<li class="active">
-					<a href="logout.php">Sair</a>
-				</li>
-			<?php
+				<ul class="list-unstyled components">
+					<li class="active">
+						<a href="logout.php">Sair</a>
+					</li>
+				<?php
 			endif;
-			if(!isset($_SESSION['usuario'])):
-			?>
-			<div class="sidebar-header">
-				<h3>Entre na sua conta</h3>
-			</div>
+			if (!isset($_SESSION['usuario'])) :
+				?>
+					<div class="sidebar-header">
+						<h3>Entre na sua conta</h3>
+					</div>
 
-			<ul class="list-unstyled components">
-				<li class="active">
-					<a href="login.php">Login</a>
-				</li>
-				<li>
-					<a href="Form.php">Crie sua conta</a>
-			</ul>
-			<?php
+					<ul class="list-unstyled components">
+						<li class="active">
+							<a href="login.php">Login</a>
+						</li>
+						<li>
+							<a href="Form.php">Crie sua conta</a>
+					</ul>
+				<?php
 			endif;
-			?>
+				?>
 		</nav>
 
 		<!-- Page Content -->
@@ -198,8 +203,11 @@ session_start();
 										</p>
 									</div>
 									<div class="modal-footer">
-										<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-										<a href="#"><button type="button" class="btn btn-primary">4.599,99</button></a>
+										<form action="lg.php" method="POST">
+											<input type="text" name="input" value="Prime">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+											<button type="submit" class="btn btn-primary">4.599,99</button>
+										</form>
 									</div>
 								</div>
 							</div>
