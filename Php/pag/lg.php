@@ -2,6 +2,10 @@
 session_start();
 include('conexao.php');
 if (!empty($_POST['input'])) {
+    if(!isset($_SESSION['usuario'])){
+        header('Location: login.php');
+        exit();
+    }
     $p = mysqli_real_escape_string($conexao, $_POST['input']);
     $produto = mysqli_query($conexao, "select id from Produtos where Nome ='{$p}'") or die("Erro");
     $produto = mysqli_fetch_assoc($produto);
