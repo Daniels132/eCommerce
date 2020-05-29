@@ -121,8 +121,7 @@
             // 
             this.cbbStatus.FormattingEnabled = true;
             this.cbbStatus.Items.AddRange(new object[] {
-            "E",
-            "N"});
+            "E"});
             this.cbbStatus.Location = new System.Drawing.Point(9, 106);
             this.cbbStatus.Name = "cbbStatus";
             this.cbbStatus.Size = new System.Drawing.Size(42, 21);

@@ -10,6 +10,7 @@ session_start();
   <title>Perifericos</title>
   <link rel="shortcut icon" type="image/x-icon" href="../Imagens/Logo.jpg">
   <link href="../CSS/style.css" rel="stylesheet">
+  <link href="../CSS/estilo.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
@@ -86,39 +87,39 @@ session_start();
     <!-- Sidebar -->
     <nav id="sidebar">
 
-			<div id="dismiss">
-				<i class="fas fa-arrow-left"></i>
-			</div>
-			<?php
-			if(isset($_SESSION['usuario'])):
-			?>
-			<div class="sidebar-header">
-				<h3><?php echo $_SESSION['usuario']?></h3>
-			</div>
+      <div id="dismiss">
+        <i class="fas fa-arrow-left"></i>
+      </div>
+      <?php
+      if (isset($_SESSION['usuario'])) :
+      ?>
+        <div class="sidebar-header">
+          <h3><?php echo $_SESSION['usuario'] ?></h3>
+        </div>
 
-			<ul class="list-unstyled components">
-				<li class="active">
-					<a href="logout.php">Sair</a>
-				</li>
-			<?php
-			endif;
-			if(!isset($_SESSION['usuario'])):
-			?>
-			<div class="sidebar-header">
-				<h3>Entre na sua conta</h3>
-			</div>
+        <ul class="list-unstyled components">
+          <li class="active">
+            <a href="logout.php">Sair</a>
+          </li>
+        <?php
+      endif;
+      if (!isset($_SESSION['usuario'])) :
+        ?>
+          <div class="sidebar-header">
+            <h3>Entre na sua conta</h3>
+          </div>
 
-			<ul class="list-unstyled components">
-				<li class="active">
-					<a href="login.php">Login</a>
-				</li>
-				<li>
-					<a href="Form.php">Crie sua conta</a>
-			</ul>
-			<?php
-			endif;
-			?>
-		</nav>
+          <ul class="list-unstyled components">
+            <li class="active">
+              <a href="login.php">Login</a>
+            </li>
+            <li>
+              <a href="Form.php">Crie sua conta</a>
+          </ul>
+        <?php
+      endif;
+        ?>
+    </nav>
 
     <!-- Page Content -->
     <div id="content">
@@ -186,8 +187,11 @@ session_start();
                     </p>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    <a href="#"><button type="button" class="btn btn-primary">R$150,99</button></a>
+                    <form action="lg.php" method="POST">
+                      <input type="text" name="input" value="HyperX Cloud Stinger">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      <button type="submit" class="btn btn-primary">R$150,99</button>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -213,8 +217,11 @@ session_start();
                     </p>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    <a href="#"><button type="button" class="btn btn-primary">R$150,99</button></a>
+                    <form action="lg.php" method="POST">
+                      <input type="text" name="input" value="Warrior Ph219">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      <button type="submit" class="btn btn-primary">R$150,99</button>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -247,8 +254,11 @@ session_start();
                     </p>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    <a href="#"><button type="button" class="btn btn-primary">R$150,99</button></a>
+                    <form action="lg.php" method="POST">
+                      <input type="text" name="input" value="Mouse Gamer Fortrek Spider">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      <button type="submit" class="btn btn-primary">R$150,99</button>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -279,8 +289,11 @@ session_start();
                         <li>Compatibilidade: Win XP/Vista/7/8/10 MAC OS X 10.2 ou Superior
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    <a href="#"><button type="button" class="btn btn-primary">R$150,99</button></a>
+                    <form action="lg.php" method="POST">
+                      <input type="text" name="input" value="Mouser Gamer Fortrek M5">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      <button type="submit" class="btn btn-primary">R$150,99</button>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -307,8 +320,11 @@ session_start();
                     </p>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    <a href="#"><button type="button" class="btn btn-primary">R$150,99</button></a>
+                    <form action="lg.php" method="POST">
+                      <input type="text" name="input" value="Teclado Gamer Warrior">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      <button type="submit" class="btn btn-primary">R$150,99</button>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -335,8 +351,11 @@ session_start();
                     </p>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    <a href="#"><button type="button" class="btn btn-primary">R$150,99</button></a>
+                    <form action="lg.php" method="POST">
+                      <input type="text" name="input" value="Fnatic Ministreak">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      <button type="submit" class="btn btn-primary">R$150,99</button>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -356,8 +375,11 @@ session_start();
                     <p align="middle">Detalhes do Produto: Multilaser: Controle 3 em 1 sem fio PS4/PC Preto Multilaser</P>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    <a href="#"><button type="button" class="btn btn-primary">R$150,99</button></a>
+                    <form action="lg.php" method="POST">
+                      <input type="text" name="input" value="Multilaser Warrior Gamer PH101">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      <button type="submit" class="btn btn-primary">R$150,99</button>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -378,8 +400,11 @@ session_start();
                     </p>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    <a href="#"><button type="button" class="btn btn-primary">R$150,99</button></a>
+                    <form action="lg.php" method="POST">
+                      <input type="text" name="input" value="Joystick ps4">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      <button type="submit" class="btn btn-primary">R$150,99</button>
+                    </form>
                   </div>
                 </div>
               </div>

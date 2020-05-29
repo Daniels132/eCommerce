@@ -116,6 +116,7 @@ namespace Ecommerce
             }
             catch (Exception erro)
             {
+                objcon.Close();
                 MessageBox.Show("Não foi possivel excluir o item desejado" + erro);
             }
             btnExcluir.Enabled = false;

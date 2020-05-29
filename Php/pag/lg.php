@@ -6,6 +6,7 @@ if (!empty($_POST['input'])) {
         header('Location: login.php');
         exit();
     }
+    $data=date("Y-m-d");
     $p = mysqli_real_escape_string($conexao, $_POST['input']);
     $produto = mysqli_query($conexao, "select id from Produtos where Nome ='{$p}'") or die("Erro");
     $produto = mysqli_fetch_assoc($produto);
@@ -16,11 +17,12 @@ if (!empty($_POST['input'])) {
     $q = $q['quantidade'];
     $qproduto = intval($q);
     $qproduto--;
-    echo $produto . " " . $qproduto;
     $queryp = "insert into pedidos(cliente_id,produto_id,QtdEstoque,status) values ({$_SESSION['id']},{$produto},{$qproduto},'N')";
     $querye = "update estoque set quantidade = {$qproduto} where produto_id = {$produto}";
+    $queryv="insert into vendas (data,id_cliente,id_produto) values ('{$data}',{$_SESSION['id']},{$produto})";
     $resultp = mysqli_query($conexao, $queryp);
     $resulte = mysqli_query($conexao, $querye);
+    $resultv = mysqli_query($conexao, $queryv) or die ("Erro venda");
     unset($_SESSION['compra']);
     header("Location: ../index.php");
     exit();

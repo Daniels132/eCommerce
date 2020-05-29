@@ -10,6 +10,7 @@ session_start();
   <title>Monitores</title>
   <link rel="shortcut icon" type="image/x-icon" href="../Imagens/Logo.jpg">
   <link href="../CSS/style.css" rel="stylesheet">
+  <link href="../CSS/estilo.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
@@ -178,8 +179,11 @@ session_start();
                     </P>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    <a href="#"><button type="button" class="btn btn-primary">R$1.298,99</button></a>
+                    <form action="lg.php" method="POST">
+                      <input type="text" name="input" value="LG 20M37AA-B">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      <button type="submit" class="btn btn-primary">R$1.298,99</button>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -212,8 +216,11 @@ session_start();
                     </P>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    <a href="#"><button type="button" class="btn btn-primary">R$1.298,99</button></a>
+                    <form action="lg.php" method="POST">
+                      <input type="text" name="input" value="LG Ultra amplo">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      <button type="submit" class="btn btn-primary">R$1.298,99</button>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -246,8 +253,11 @@ session_start();
                     </P>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    <a href="#"><button type="button" class="btn btn-primary">R$1.298,99</button></a>
+                    <form action="lg.php" method="POST">
+                      <input type="text" name="input" value="LG 20M37AA">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      <button type="submit" class="btn btn-primary">R$1.298,99</button>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -280,8 +290,11 @@ session_start();
                     </P>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    <a href="#"><button type="button" class="btn btn-primary">R$1.298,99</button></a>
+                    <form action="lg.php" method="POST">
+                      <input type="text" name="input" value="FORTNITE">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      <button type="submit" class="btn btn-primary">R$1.298,99</button>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -314,8 +327,11 @@ session_start();
                     </P>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    <a href="#"><button type="button" class="btn btn-primary">R$1.298,99</button></a>
+                    <form action="lg.php" method="POST">
+                      <input type="text" name="input" value="AOC 23 6 LED Full HD">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      <button type="submit" class="btn btn-primary">R$1.298,99</button>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -348,8 +364,11 @@ session_start();
                     </P>
                   </div>
                   <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    <a href="#"><button type="button" class="btn btn-primary">R$1.298,99</button></a>
+                    <form action="lg.php" method="POST">
+                      <input type="text" name="input" value="AOC Led e970swnl">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                      <button type="submit" class="btn btn-primary">R$1.298,99</button>
+                    </form>
                   </div>
                 </div>
               </div>

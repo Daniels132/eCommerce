@@ -10,14 +10,10 @@ session_start();
 	<title>PC Gamer</title>
 	<link rel="shortcut icon" type="image/x-icon" href="../Imagens/Logo.jpg">
 	<link href="../CSS/style.css" rel="stylesheet">
+	<link href="../CSS/estilo.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-	<style>
-		input[type=text]{
-			display: none;
-		}
-	</style>
 	<script>
 		function mudacor(obj, img) {
 			obj.src = img;
@@ -267,8 +263,11 @@ session_start();
 										</p>
 									</div>
 									<div class="modal-footer">
-										<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-										<a href="#"><button type="button" class="btn btn-primary">4.599,99</button></a>
+										<form action="lg.php" method="POST">
+											<input type="text" name="input" value="Nitro 50">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+											<button type="submit" class="btn btn-primary">4.599,99</button>
+										</form>
 									</div>
 								</div>
 							</div>
@@ -328,8 +327,11 @@ session_start();
 										</p>
 									</div>
 									<div class="modal-footer">
-										<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-										<a href="#"><button type="button" class="btn btn-primary">4.599,99</button></a>
+										<form action="lg.php" method="POST">
+											<input type="text" name="input" value="Rog">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+											<button type="submit" class="btn btn-primary">4.599,99</button>
+										</form>
 									</div>
 								</div>
 							</div>
@@ -389,8 +391,11 @@ session_start();
 										</p>
 									</div>
 									<div class="modal-footer">
-										<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-										<a href="#"><button type="button" class="btn btn-primary">4.599,99</button></a>
+										<form action="lg.php" method="POST">
+											<input type="text" name="input" value="Asus">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+											<button type="submit" class="btn btn-primary">4.599,99</button>
+										</form>
 									</div>
 								</div>
 							</div>
@@ -450,8 +455,11 @@ session_start();
 										</p>
 									</div>
 									<div class="modal-footer">
-										<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-										<a href="#"><button type="button" class="btn btn-primary">4.599,99</button></a>
+										<form action="lg.php" method="POST">
+											<input type="text" name="input" value="Asus Rog">
+											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+											<button type="submit" class="btn btn-primary">4.599,99</button>
+										</form>
 									</div>
 								</div>
 							</div>
