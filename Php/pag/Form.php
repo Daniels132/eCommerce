@@ -1,195 +1,59 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
-<html>
-
+<html lang="pt-br">
 <head>
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <!------ Include the above in your HEAD tag ---------->
-
-  <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-  <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
-  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-  <!------ Include the above in your HEAD tag ---------->
-
-  <!DOCTYPE html>
-
-
-  <title>Cadastro</title>
-  <link rel="shortcut icon" type="image/x-icon" href="../Imagens/Logo.png">
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
-
 <body>
+<a href="../index.php"><img src="../Imagens/logo.png" height="100px" class="offset-md-5"></a>
+<form action="cad.php" method="POST">
+<div class="border border-info w-50 p-3 col-md-6 offset-md-3">
+  <div class="col-md-6 offset-md-3">
+    <label for="nome">Nome</label>
+    <input type="text" name="nome" class="form-control" id="nome" aria-describedby="nome" placeholder="Seu Nome">
+  </div>
+  <div class="col-md-6 offset-md-3">
+    <label>Telefone</label>
+    <input type="number" name="tel" class="form-control" aria-describedby="tel" placeholder="Apenas números" style="width: 250px;">
+  </div>
+  <div class="col-md-6 offset-md-3">
+    <label for="email">Endereço de email</label>
+    <input type="email" name="email" class="form-control" id="email" aria-describedby="email" placeholder="Seu email">
+    <small id="emailHelp" class="form-text text-muted">Nunca vamos compartilhar seu email, com ninguém.</small>
+  </div>
+  <div class="col-md-6 offset-md-3">
+    <label for="cpf">CPF</label>
+    <input type="number" name="cpf" class="form-control" id="cpf" aria-describedby="cpf" placeholder="Apenas números" style="width: 150px;">
+  </div>
+  <div class="col-md-6 offset-md-3">
+  <label for="rg" >RG</label>
+    <input type="number" name="rg" class="form-control" id="rg" aria-describedby="rg" placeholder="Apenas números" style="width: 150px;">
+  </div>
+  <div class="col-md-6 offset-md-3">
+    <label for="end">Endereço</label>
+    <input type="text" name="end" class="form-control" id="end" aria-describedby="end" placeholder="Endereço e número">
+    <input type="text" name="cid" class="form-control float-left" id="cid" aria-describedby="cid" placeholder="Cidade" style="width: 150px;">
+    <input type="text" name="est" class="form-control float-rigth" id="est" aria-describedby="est" placeholder="Estado" style="width: 100px;">
+  </div>
+  <div class="col-md-6 offset-md-3 required">
+    <label for="senha">Senha</label>
+    <input type="password" name="senha" class="form-control" id="senha" placeholder="Senha" style="width: 250px;">
+  </div><br>
+  <div class="col-md-6 offset-md-3">
+  <button type="submit" class="btn btn-success">Cadastrar</button>
+  <a href="../index.php"><button type="button" class="btn btn-danger">Cancelar</button></a>
+  </div>
+  </div>
+</form>
 
-  <form class="form-horizontal">
-    <fieldset>
-      <div class="panel panel-primary">
-        <div class="panel-heading">Cadastro de Cliente</div>
-
-        <div class="panel-body">
-          <div class="form-group">
-
-            <div class="col-md-11 control-label">
-              <p class="help-block">
-                <h11>*</h11> Campo Obrigatório
-              </p>
-            </div>
-          </div>
-
-          <!-- Text input-->
-          <div class="form-group">
-            <label class="col-md-2 control-label" for="Nome">Nome <h11>*</h11></label>
-            <div class="col-md-8">
-              <input id="Nome" name="Nome" placeholder="" class="form-control input-md" required type="text">
-            </div>
-          </div>
-
-          <!-- Text input-->
-          <div class="form-group">
-            <label class="col-md-2 control-label" for="Nome">CPF <h11>*</h11></label>
-            <div class="col-md-2">
-              <input id="cpf" name="cpf" placeholder="Apenas números" class="form-control input-md" required="" type="text" maxlength="11" pattern="[0-9]+$">
-            </div>
-
-            <label class="col-md-1 control-label" for="Nome">Nascimento<h11>*</h11></label>
-            <div class="col-md-2">
-              <input id="dtnasc" name="dtnasc" placeholder="DD/MM/AAAA" class="form-control input-md" required="" type="text" maxlength="10" OnKeyPress="formatar('##/##/####', this)" onBlur="showhide()">
-            </div>
-
-            <!-- Multiple Radios (inline) -->
-
-            <label class="col-md-1 control-label" for="radios">Sexo <h11>*</h11></label>
-            <div class="col-md-4">
-              <label required="" class="radio-inline" for="radios-0">
-                <input name="sexo" id="sexo" value="feminino" type="radio" required>
-                Feminino
-              </label>
-              <label class="radio-inline" for="radios-1">
-                <input name="sexo" id="sexo" value="masculino" type="radio">
-                Masculino
-              </label>
-            </div>
-          </div>
-
-          <!-- Prepended text-->
-          <div class="form-group">
-            <label class="col-md-2 control-label" for="prependedtext">Telefone <h11>*</h11></label>
-            <div class="col-md-2">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                <input id="prependedtext" name="prependedtext" class="form-control" placeholder="XX XXXXX-XXXX" required="" type="text" maxlength="13" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$" OnKeyPress="formatar('## #####-####', this)">
-              </div>
-            </div>
-
-            <label class="col-md-1 control-label" for="prependedtext">Telefone</label>
-            <div class="col-md-2">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-                <input id="prependedtext" name="prependedtext" class="form-control" placeholder="XX XXX-XXXX" type="text" maxlength="11" pattern="\[0-9]{2}\ [0-9]{4,6}-[0-9]{3,4}$" OnKeyPress="formatar('## #####-####', this)">
-              </div>
-            </div>
-          </div>
-
-          <!-- Prepended text-->
-          <div class="form-group">
-            <label class="col-md-2 control-label" for="prependedtext">Email <h11>*</h11></label>
-            <div class="col-md-5">
-              <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
-                <input id="prependedtext" name="prependedtext" class="form-control" placeholder="email@email.com" required="" type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
-              </div>
-            </div>
-          </div>
-
-
-          <!-- Search input-->
-          <div class="form-group">
-            <label class="col-md-2 control-label" for="CEP">CEP <h11>*</h11></label>
-            <div class="col-md-2">
-              <input id="cep" name="cep" placeholder="Apenas números" class="form-control input-md" required="" value="" type="search" maxlength="8" pattern="[0-9]+$">
-            </div>
-            <div class="col-md-2">
-              <button type="button" class="btn btn-primary" onclick="pesquisacep(cep.value)">Pesquisar</button>
-            </div>
-          </div>
-
-          <!-- Prepended text-->
-          <div class="form-group">
-            <label class="col-md-2 control-label" for="prependedtext">Endereço</label>
-            <div class="col-md-4">
-              <div class="input-group">
-                <span class="input-group-addon">Rua</span>
-                <input id="rua" name="rua" class="form-control" placeholder="" required="" readonly="readonly" type="text">
-              </div>
-
-            </div>
-            <div class="col-md-2">
-              <div class="input-group">
-                <span class="input-group-addon">Nº <h11>*</h11></span>
-                <input id="numero" name="numero" class="form-control" placeholder="" required="" type="text">
-              </div>
-
-            </div>
-
-            <div class="col-md-3">
-              <div class="input-group">
-                <span class="input-group-addon">Bairro</span>
-                <input id="bairro" name="bairro" class="form-control" placeholder="" required="" readonly="readonly" type="text">
-              </div>
-
-            </div>
-          </div>
-
-          <div class="form-group">
-            <label class="col-md-2 control-label" for="prependedtext"></label>
-            <div class="col-md-4">
-              <div class="input-group">
-                <span class="input-group-addon">Cidade</span>
-                <input id="cidade" name="cidade" class="form-control" placeholder="" required="" readonly="readonly" type="text">
-              </div>
-
-            </div>
-
-            <div class="col-md-2">
-              <div class="input-group">
-                <span class="input-group-addon">Estado</span>
-                <input id="estado" name="estado" class="form-control" placeholder="" required="" readonly="readonly" type="text">
-              </div>
-
-            </div>
-          </div>
-
-
-
-
-        </div>
-      </div>
-      </div>
-
-      </div>
-
-      </div>
-
-      </div>
-
-      <!--botão cadastro -->
-      <div class="form-group">
-        <label class="col-md-2 control-label" for="Cadastrar"></label>
-        <div class="col-md-8">
-          <button id="Cadastrar" name="Cadastrar" class="btn btn-success" type="Submit">Cadastrar</button>
-          <a href="../index.php" button id="Cancelar" name="Cancelar" class="btn btn-danger" type="Reset">Cancelar</button></a>
-        </div>
-      </div>
-
-      </div>
-      </div>
-
-
-    </fieldset>
-  </form>
-
+  
 </body>
-
 </html>
