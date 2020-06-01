@@ -1,24 +1,46 @@
 <?php
-session_start();
+  session_start();
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Cadastro</title>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 <body>
-<a href="../index.php"><img src="../Imagens/logo.png" height="100px" class="offset-md-5"></a>
+  <a href="../index.php"><img src="../Imagens/logo.png" height="100px" class="offset-md-5"></a>
+    <?php
+       if(isset($_SESSION['status_cadastro'])):
+    ?>
+  <div class="border border-dark w-50 p-3 col-md-6 offset-md-3 progress-bar progress-bar-striped bg-success">
+    <p class="text-center"><strong>cadastro efetuado</strong></p>
+    <p class="text-center"><strong>faça o login informando seu cpf e senha <a href="login.php">aqui</a></strong></p>
+  </div>
+    <?php
+        endif;
+        unset($_SESSION['status_cadastro'])
+    ?>
+    <?php
+      if(isset($_SESSION['email_existe'])):
+    ?>
+  <div class="border border-dark w-50 p-3 col-md-6 offset-md-3 progress-bar progress-bar-striped bg-danger">
+    <p class="text-center"><strong>O email cadastrado está em uso, por favor insira outro.</strong></p>
+  </div>
+    <?php
+      endif;
+      unset($_SESSION['email_existe'])
+    ?>
+
 <form action="cad.php" method="POST">
-<div class="border border-info w-50 p-3 col-md-6 offset-md-3">
-  <div class="col-md-6 offset-md-3">
-    <label for="nome">Nome</label>
-    <input type="text" name="nome" class="form-control" id="nome" aria-describedby="nome" placeholder="Seu Nome">
+  <div class="border border-info w-50 p-3 col-md-6 offset-md-3">
+    <div class="col-md-6 offset-md-3">
+      <label for="nome">Nome</label>
+     <input type="text" name="nome" class="form-control" id="nome" aria-describedby="nome" placeholder="Seu Nome">
   </div>
   <div class="col-md-6 offset-md-3">
     <label>Telefone</label>
