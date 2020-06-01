@@ -32,7 +32,6 @@ else if ((empty($_POST['cpf']) || empty($_POST['senha'])) && (!isset($_SESSION['
     exit();
 }
 else if(isset($_SESSION['cpf'])){
-    echo $_SESSION['cpf']."".$_SESSION['senha'];
     $cpf=mysqli_real_escape_string($conexao,$_SESSION['cpf']);
     $senha=mysqli_real_escape_string($conexao,$_SESSION['senha']);
     $query = "select nome from clientes where cpf ={$cpf} and senha =md5({$senha})";
