@@ -27,10 +27,29 @@ if (!empty($_POST['input'])) {
     header("Location: ../index.php");
     exit();
 }
-else if (empty($_POST['cpf']) || empty($_POST['senha'])) {
+else if ((empty($_POST['cpf']) || empty($_POST['senha'])) && (!isset($_SESSION['cpf']))) {
     header('Location: login.php');
     exit();
-} else {
+}
+else if(isset($_SESSION['cpf'])){
+    $cpf=mysqli_real_escape_string($conexao,$_SESSION['cpf']);
+    $senha=mysqli_real_escape_string($conexao,$_SESSION['senha']);
+    $query = "select nome from clientes where cpf ={$cpf} and senha =md5({$senha})";
+    $id = mysqli_query($conexao, "select id from clientes where cpf ={$cpf} and senha =md5({$senha})");
+    $id = mysqli_fetch_assoc($id);
+    $id = $id['id'];
+    $result = mysqli_query($conexao, $query);
+    $n = mysqli_fetch_assoc($result);
+    $nome = $n['nome'];
+    $row = mysqli_num_rows($result);
+    if ($row == 1) {
+        $_SESSION['usuario'] = $nome;
+        $_SESSION['id'] = $id;
+        header('Location: ../index.php');
+        exit();
+    }
+} 
+else {
     $usuario = mysqli_real_escape_string($conexao, $_POST['cpf']);
     $senha = mysqli_real_escape_string($conexao, $_POST['senha']);
     $query = "select nome from clientes where cpf ={$usuario} and senha =md5({$senha})";
