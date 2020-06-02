@@ -128,5 +128,14 @@ namespace Ecommerce
         {
             btnExcluir.Enabled = true;
         }
+
+        private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            this.txtIdProduto.Text = dataGridView.Rows[dataGridView.CurrentRow.Index].Cells[0].Value.ToString();
+            this.txtNome.Text = dataGridView.Rows[dataGridView.CurrentRow.Index].Cells[1].Value.ToString();
+            this.txtIdFornecedor.Text = dataGridView.Rows[dataGridView.CurrentRow.Index].Cells[2].Value.ToString();
+            this.txtPrecoCusto.Text = dataGridView.Rows[dataGridView.CurrentRow.Index].Cells[3].Value.ToString();
+            this.txtPrecoVenda.Text = dataGridView.Rows[dataGridView.CurrentRow.Index].Cells[4].Value.ToString();
+        }
     }
 }

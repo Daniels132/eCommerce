@@ -82,7 +82,7 @@ namespace Ecommerce
 
         private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            this.txtId.Text = dataGridView.Rows[dataGridView.CurrentRow.Index].Cells[0].Value.ToString();
         }
     }
 }

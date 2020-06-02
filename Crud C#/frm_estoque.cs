@@ -119,5 +119,11 @@ namespace Ecommerce
         {
             btnAdd.Enabled = true;
         }
+
+        private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            this.txtIdAdd.Text = dataGridView.Rows[dataGridView.CurrentRow.Index].Cells[0].Value.ToString();
+            this.txtIdAtl.Text = dataGridView.Rows[dataGridView.CurrentRow.Index].Cells[0].Value.ToString();
+        }
     }
 }

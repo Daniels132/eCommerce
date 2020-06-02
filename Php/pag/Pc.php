@@ -199,7 +199,7 @@ session_start();
 										</p>
 									</div>
 									<div class="modal-footer">
-										<form action="lg.php" method="POST">
+										<form action="lg.php" method="POST" target="_blank">
 											<input type="text" name="input" value="Prime">
 											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
 											<button type="submit" class="btn btn-primary">4.599,99</button>
@@ -263,7 +263,7 @@ session_start();
 										</p>
 									</div>
 									<div class="modal-footer">
-										<form action="lg.php" method="POST">
+										<form action="lg.php" method="POST" target="_blank">
 											<input type="text" name="input" value="Nitro 50">
 											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
 											<button type="submit" class="btn btn-primary">4.599,99</button>
@@ -327,7 +327,7 @@ session_start();
 										</p>
 									</div>
 									<div class="modal-footer">
-										<form action="lg.php" method="POST">
+										<form action="lg.php" method="POST" target="_blank">
 											<input type="text" name="input" value="Rog">
 											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
 											<button type="submit" class="btn btn-primary">4.599,99</button>
@@ -391,7 +391,7 @@ session_start();
 										</p>
 									</div>
 									<div class="modal-footer">
-										<form action="lg.php" method="POST">
+										<form action="lg.php" method="POST" target="_blank">
 											<input type="text" name="input" value="Asus">
 											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
 											<button type="submit" class="btn btn-primary">4.599,99</button>
@@ -455,7 +455,7 @@ session_start();
 										</p>
 									</div>
 									<div class="modal-footer">
-										<form action="lg.php" method="POST">
+										<form action="lg.php" method="POST" target="_blank">
 											<input type="text" name="input" value="Asus Rog">
 											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
 											<button type="submit" class="btn btn-primary">4.599,99</button>

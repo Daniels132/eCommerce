@@ -187,7 +187,7 @@ session_start();
                     </p>
                   </div>
                   <div class="modal-footer">
-                    <form action="lg.php" method="POST">
+                    <form action="lg.php" method="POST" target="_blank">
                       <input type="text" name="input" value="HyperX Cloud Stinger">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                       <button type="submit" class="btn btn-primary">R$150,99</button>
@@ -217,7 +217,7 @@ session_start();
                     </p>
                   </div>
                   <div class="modal-footer">
-                    <form action="lg.php" method="POST">
+                    <form action="lg.php" method="POST" target="_blank">
                       <input type="text" name="input" value="Warrior Ph219">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                       <button type="submit" class="btn btn-primary">R$150,99</button>
@@ -254,7 +254,7 @@ session_start();
                     </p>
                   </div>
                   <div class="modal-footer">
-                    <form action="lg.php" method="POST">
+                    <form action="lg.php" method="POST" target="_blank">
                       <input type="text" name="input" value="Mouse Gamer Fortrek Spider">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                       <button type="submit" class="btn btn-primary">R$150,99</button>
@@ -289,7 +289,7 @@ session_start();
                         <li>Compatibilidade: Win XP/Vista/7/8/10 MAC OS X 10.2 ou Superior
                   </div>
                   <div class="modal-footer">
-                    <form action="lg.php" method="POST">
+                    <form action="lg.php" method="POST" target="_blank">
                       <input type="text" name="input" value="Mouser Gamer Fortrek M5">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                       <button type="submit" class="btn btn-primary">R$150,99</button>
@@ -320,7 +320,7 @@ session_start();
                     </p>
                   </div>
                   <div class="modal-footer">
-                    <form action="lg.php" method="POST">
+                    <form action="lg.php" method="POST" target="_blank">
                       <input type="text" name="input" value="Teclado Gamer Warrior">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                       <button type="submit" class="btn btn-primary">R$150,99</button>
@@ -351,7 +351,7 @@ session_start();
                     </p>
                   </div>
                   <div class="modal-footer">
-                    <form action="lg.php" method="POST">
+                    <form action="lg.php" method="POST" target="_blank">
                       <input type="text" name="input" value="Fnatic Ministreak">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                       <button type="submit" class="btn btn-primary">R$150,99</button>
@@ -375,7 +375,7 @@ session_start();
                     <p align="middle">Detalhes do Produto: Multilaser: Controle 3 em 1 sem fio PS4/PC Preto Multilaser</P>
                   </div>
                   <div class="modal-footer">
-                    <form action="lg.php" method="POST">
+                    <form action="lg.php" method="POST" target="_blank">
                       <input type="text" name="input" value="Multilaser Warrior Gamer PH101">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                       <button type="submit" class="btn btn-primary">R$150,99</button>
@@ -400,7 +400,7 @@ session_start();
                     </p>
                   </div>
                   <div class="modal-footer">
-                    <form action="lg.php" method="POST">
+                    <form action="lg.php" method="POST" target="_blank">
                       <input type="text" name="input" value="Joystick ps4">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                       <button type="submit" class="btn btn-primary">R$150,99</button>

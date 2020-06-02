@@ -179,7 +179,7 @@ session_start();
                     </P>
                   </div>
                   <div class="modal-footer">
-                    <form action="lg.php" method="POST">
+                    <form action="lg.php" method="POST" target="_blank">
                       <input type="text" name="input" value="LG 20M37AA-B">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                       <button type="submit" class="btn btn-primary">R$1.298,99</button>
@@ -216,7 +216,7 @@ session_start();
                     </P>
                   </div>
                   <div class="modal-footer">
-                    <form action="lg.php" method="POST">
+                    <form action="lg.php" method="POST" target="_blank">
                       <input type="text" name="input" value="LG Ultra amplo">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                       <button type="submit" class="btn btn-primary">R$1.298,99</button>
@@ -253,7 +253,7 @@ session_start();
                     </P>
                   </div>
                   <div class="modal-footer">
-                    <form action="lg.php" method="POST">
+                    <form action="lg.php" method="POST" target="_blank">
                       <input type="text" name="input" value="LG 20M37AA">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                       <button type="submit" class="btn btn-primary">R$1.298,99</button>
@@ -290,7 +290,7 @@ session_start();
                     </P>
                   </div>
                   <div class="modal-footer">
-                    <form action="lg.php" method="POST">
+                    <form action="lg.php" method="POST" target="_blank">
                       <input type="text" name="input" value="FORTNITE">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                       <button type="submit" class="btn btn-primary">R$1.298,99</button>
@@ -327,7 +327,7 @@ session_start();
                     </P>
                   </div>
                   <div class="modal-footer">
-                    <form action="lg.php" method="POST">
+                    <form action="lg.php" method="POST" target="_blank">
                       <input type="text" name="input" value="AOC 23 6 LED Full HD">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                       <button type="submit" class="btn btn-primary">R$1.298,99</button>
@@ -364,7 +364,7 @@ session_start();
                     </P>
                   </div>
                   <div class="modal-footer">
-                    <form action="lg.php" method="POST">
+                    <form action="lg.php" method="POST" target="_blank">
                       <input type="text" name="input" value="AOC Led e970swnl">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                       <button type="submit" class="btn btn-primary">R$1.298,99</button>

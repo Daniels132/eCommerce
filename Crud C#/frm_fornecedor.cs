@@ -141,5 +141,17 @@ namespace Ecommerce
         {
             btnSalvar.Enabled = true;
         }
+
+        private void dataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            this.txtId.Text = dataGridView.Rows[dataGridView.CurrentRow.Index].Cells[0].Value.ToString();
+            this.txtNome.Text = dataGridView.Rows[dataGridView.CurrentRow.Index].Cells[1].Value.ToString();
+            this.mkdTelefone.Text = dataGridView.Rows[dataGridView.CurrentRow.Index].Cells[2].Value.ToString();
+            this.txtEmail.Text = dataGridView.Rows[dataGridView.CurrentRow.Index].Cells[3].Value.ToString();
+            this.txtEndereco.Text = dataGridView.Rows[dataGridView.CurrentRow.Index].Cells[4].Value.ToString();
+            this.txtCidade.Text = dataGridView.Rows[dataGridView.CurrentRow.Index].Cells[5].Value.ToString();
+            this.txtEstado.Text = dataGridView.Rows[dataGridView.CurrentRow.Index].Cells[6].Value.ToString();
+            this.mkdContrato.Text = dataGridView.Rows[dataGridView.CurrentRow.Index].Cells[7].Value.ToString();
+        }
     }
 }
