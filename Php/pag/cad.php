@@ -19,6 +19,14 @@ if($row['total'] == 1){
     header('location: Form.php');
     exit;
 }
+$sql = "select count(*) as total from clientes where cpf = '$cpf'";
+$result = mysqli_query($conexao, $sql);
+$row = mysqli_fetch_assoc($result);
+if($row['total'] == 1){
+   $_SESSION['cpf_existe'] =  true;
+    header('location: Form.php');
+    exit;
+}
 $sql = "INSERT INTO clientes (nome, telefone, email, cpf, rg, endereço, cidade, estado, senha)
 VALUES ('$nome', '$telefone', '$email', '$cpf', '$rg', '$end', '$est', '$cid', md5('$senha'))";
 if($conexao->query($sql)=== TRUE){

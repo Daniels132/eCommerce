@@ -36,6 +36,16 @@
     <?php
       endif;
       unset($_SESSION['email_existe'])
+	?>
+	<?php
+      if(isset($_SESSION['cpf_existe'])):
+    ?>
+  <div class="border border-dark w-50 p-3 col-md-5 offset-md-4 progress-bar progress-bar-striped bg-danger">
+    <p class="text-center"><strong>O cpf cadastrado está em uso, por favor insira outro.</strong></p>
+  </div>
+    <?php
+      endif;
+      unset($_SESSION['cpf_existe'])
     ?>
 
 
