@@ -1,4 +1,28 @@
 /* Simple CSS3 Fade-in-down Animation */
+#cep{
+  display: flex;
+}
+#cep span{
+  width: 50px;
+  height: 40px;
+  margin-left: 6px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  background-color: rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#cep span::after{
+  content:"";
+  background-image: url('../Imagens/search.svg');
+  width: 20px;
+  height: 20px;
+}
+#cep span:hover{
+  background-color: rgba(0,0,0,0.5);
+  cursor:pointer;
+}
 .fadeInDown {
     -webkit-animation-name: fadeInDown;
     animation-name: fadeInDown;
