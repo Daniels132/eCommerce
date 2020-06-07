@@ -1,4 +1,5 @@
 /* Simple CSS3 Fade-in-down Animation */
+
 #cep{
   display: flex;
 }
@@ -22,6 +23,7 @@
 #cep span:hover{
   background-color: rgba(0,0,0,0.5);
   cursor:pointer;
+  transition: 400ms;
 }
 .fadeInDown {
     -webkit-animation-name: fadeInDown;
