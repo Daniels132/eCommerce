@@ -10,55 +10,12 @@ session_start();
 	<title>PC Gamer</title>
 	<link rel="shortcut icon" type="image/x-icon" href="../Imagens/Logo.jpg">
 	<link href="../CSS/style.css" rel="stylesheet">
-	<link href="../CSS/estilo.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+	<link href="../CSS/produtos.css" rel="stylesheet">
+	<link href="../CSS/responsive.css" rel="stylesheet">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-	<script>
-		function mudacor(obj, img) {
-			obj.src = img;
-		}
-
-		function iniciar() {
-			var obj1 = document.getElementById("img1");
-			var obj2 = document.getElementById("img2");
-			var obj3 = document.getElementById("img3");
-			var obj4 = document.getElementById("img4");
-			var obj5 = document.getElementById("img5");
-
-			obj1.addEventListener("mouseover", function(event) {
-				mudacor(this, "../Imagens/PC1.1.jpg");
-			});
-			obj1.addEventListener("mouseout", function(event) {
-				mudacor(this, "../Imagens/PC1.jpg");
-			});
-			obj2.addEventListener("mouseover", function(event) {
-				mudacor(this, "../Imagens/PC3.1.jpg");
-			});
-			obj2.addEventListener("mouseout", function(event) {
-				mudacor(this, "../Imagens/PC3.jpg");
-			});
-			obj3.addEventListener("mouseover", function(event) {
-				mudacor(this, "../Imagens/PC4.1.jpg");
-			});
-			obj3.addEventListener("mouseout", function(event) {
-				mudacor(this, "../Imagens/PC4.jpg");
-			});
-			obj4.addEventListener("mouseover", function(event) {
-				mudacor(this, "../Imagens/PC5.2.jpg");
-			});
-			obj4.addEventListener("mouseout", function(event) {
-				mudacor(this, "../Imagens/PC5.jpg");
-			});
-			obj5.addEventListener("mouseover", function(event) {
-				mudacor(this, "../Imagens/PC2.1.jpg");
-			});
-			obj5.addEventListener("mouseout", function(event) {
-				mudacor(this, "../Imagens/PC2.jpg");
-			});
-		}
-		window.addEventListener("load", iniciar);
-	</script>
+	
 </head>
 
 <body>
@@ -200,7 +157,7 @@ session_start();
 									</div>
 									<div class="modal-footer">
 										<form action="lg.php" method="POST" target="_blank">
-											<input type="text" name="input" value="Prime">
+											<input type="hidden" name="input" value="Prime">
 											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
 											<button type="submit" class="btn btn-primary">4.599,99</button>
 										</form>
@@ -264,7 +221,7 @@ session_start();
 									</div>
 									<div class="modal-footer">
 										<form action="lg.php" method="POST" target="_blank">
-											<input type="text" name="input" value="Nitro 50">
+											<input type="hidden" name="input" value="Nitro 50">
 											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
 											<button type="submit" class="btn btn-primary">4.599,99</button>
 										</form>
@@ -328,7 +285,7 @@ session_start();
 									</div>
 									<div class="modal-footer">
 										<form action="lg.php" method="POST" target="_blank">
-											<input type="text" name="input" value="Rog">
+											<input type="hidden" name="input" value="Rog">
 											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
 											<button type="submit" class="btn btn-primary">4.599,99</button>
 										</form>
@@ -392,7 +349,7 @@ session_start();
 									</div>
 									<div class="modal-footer">
 										<form action="lg.php" method="POST" target="_blank">
-											<input type="text" name="input" value="Asus">
+											<input type="hidden" name="input" value="Asus">
 											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
 											<button type="submit" class="btn btn-primary">4.599,99</button>
 										</form>
@@ -456,7 +413,7 @@ session_start();
 									</div>
 									<div class="modal-footer">
 										<form action="lg.php" method="POST" target="_blank">
-											<input type="text" name="input" value="Asus Rog">
+											<input type="hidden" name="input" value="Asus Rog">
 											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
 											<button type="submit" class="btn btn-primary">4.599,99</button>
 										</form>
@@ -466,23 +423,49 @@ session_start();
 						</div>
 						<img src="../Imagens/slide2.4.jpg" class="img-fluid" alt="Responsive image">
 						<!--PCs-->
-						<div class="container-fluid">
-
-							<a data-toggle="modal" data-target="#PC1">
-								<img src="../Imagens/PC1.jpg" alt="..." class="img-thumbnail" id="img1">
-							</a>
-							<a data-toggle="modal" data-target="#PC3">
-								<img src="../Imagens/PC3.jpg" alt="..." class="img-thumbnail" id="img2">
-							</a>
-							<a data-toggle="modal" data-target="#PC4">
-								<img src="../Imagens/PC4.jpg" alt="..." class="img-thumbnail" id="img3">
-							</a>
-							<a data-toggle="modal" data-target="#PC5">
-								<img src="../Imagens/PC5.jpg" alt="..." class="img-thumbnail" id="img4">
-							</a>
-							<a data-toggle="modal" data-target="#PC2">
-								<img src="../Imagens/PC2.jpg" alt="..." class="img-thumbnail" id="img5">
-							</a>
+						<div class="produtos">
+							<div class="grid">
+								<li>
+									<a data-toggle="modal" data-target="#PC1">
+										<img src="../Imagens/PC1.jpg" alt="..." class="img-thumbnail" id="img1">
+										<div class="preco">
+											<button>R$4599,99</button>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a data-toggle="modal" data-target="#PC3">
+										<img src="../Imagens/PC3.jpg" alt="..." class="img-thumbnail" id="img2">
+										<div class="preco">
+											<button>R$4599,99</button>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a data-toggle="modal" data-target="#PC4">
+										<img src="../Imagens/PC4.jpg" alt="..." class="img-thumbnail" id="img3">
+										<div class="preco">
+											<button>R$4599,99</button>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a data-toggle="modal" data-target="#PC5">
+										<img src="../Imagens/PC5.jpg" alt="..." class="img-thumbnail" id="img4">
+										<div class="preco">
+											<button>R$4599,99</button>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a data-toggle="modal" data-target="#PC2">
+										<img src="../Imagens/PC2.jpg" alt="..." class="img-thumbnail" id="img5">
+										<div class="preco">
+											<button>R$4599,99</button>
+										</div>
+									</a>
+								</li>
+							</div>
 						</div>
 				</div>
 			</nav>

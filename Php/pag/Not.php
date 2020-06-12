@@ -7,50 +7,14 @@ session_start();
 <head>
 	<meta charset="utf-8">
 	<link rel="stylesheet" href="../CSS/bootstrap.css">
-	<title>Notbooks</title>
+	<title>Notebooks</title>
 	<link rel="shortcut icon" type="image/x-icon" href="../Imagens/Logo.jpg">
 	<link href="../CSS/style.css" rel="stylesheet">
-	<link href="../CSS/estilo.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+	<link href="../CSS/produtos.css" rel="stylesheet">
+	<link href="../CSS/responsive.css" rel="stylesheet">
 	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-	<script type="text/javascript">
-		function mudacor(obj, img) {
-			obj.src = img;
-		}
-
-		function iniciar() {
-			var obj1 = document.getElementById("img1");
-			var obj2 = document.getElementById("img2");
-			var obj3 = document.getElementById("img3");
-			var obj4 = document.getElementById("img4");
-			obj1.addEventListener("mouseover", function(event) {
-				mudacor(this, "../Imagens/Not1.1.png");
-			});
-			obj1.addEventListener("mouseout", function(event) {
-				mudacor(this, "../Imagens/Not1.jpg");
-			});
-			obj2.addEventListener("mouseover", function(event) {
-				mudacor(this, "../Imagens/Not2.1.jpg");
-			});
-			obj2.addEventListener("mouseout", function(event) {
-				mudacor(this, "../Imagens/Not2.jpg");
-			});
-			obj3.addEventListener("mouseover", function(event) {
-				mudacor(this, "../Imagens/Not3.1.png");
-			});
-			obj3.addEventListener("mouseout", function(event) {
-				mudacor(this, "../Imagens/Not3.jpg");
-			});
-			obj4.addEventListener("mouseover", function(event) {
-				mudacor(this, "../Imagens/Not4.1.jpg");
-			});
-			obj4.addEventListener("mouseout", function(event) {
-				mudacor(this, "../Imagens/Not4.jpg");
-			});
-		}
-		window.addEventListener("load", iniciar);
-	</script>
 </head>
 
 <body>
@@ -165,7 +129,7 @@ session_start();
 									</div>
 									<div class="modal-footer">
 										<form action="lg.php" method="POST" target="_blank">
-											<input type="text" name="input" value="Alienware">
+											<input type="hidden" name="input" value="Alienware">
 											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
 											<button type="submit" class="btn btn-primary">R$3.500,99</button>
 										</form>
@@ -199,7 +163,7 @@ session_start();
 									</div>
 									<div class="modal-footer">
 										<form action="lg.php" method="POST" target="_blank">
-											<input type="text" name="input" value="Acer Gamer i7">
+											<input type="hidden" name="input" value="Acer Gamer i7">
 											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
 											<button type="submit" class="btn btn-primary">R$3.500,99</button>
 										</form>
@@ -233,7 +197,7 @@ session_start();
 									</div>
 									<div class="modal-footer">
 										<form action="lg.php" method="POST" target="_blank">
-											<input type="text" name="input" value="Asus Gaming">
+											<input type="hidden" name="input" value="Asus Gaming">
 											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
 											<button type="submit" class="btn btn-primary">R$3.500,99</button>
 										</form>
@@ -267,7 +231,7 @@ session_start();
 									</div>
 									<div class="modal-footer">
 										<form action="lg.php" method="POST" target="_blank">
-											<input type="text" name="input" value="Lenovo Legion">
+											<input type="hidden" name="input" value="Lenovo Legion">
 											<button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
 											<button type="submit" class="btn btn-primary">R$3.500,99</button>
 										</form>
@@ -275,23 +239,43 @@ session_start();
 								</div>
 							</div>
 						</div>
-						<div class="container col-13">
-							<img src="../Imagens/slide2.5.jpg" class="img-fluid" alt="Responsive image">
-						</div>
+						<img src="../Imagens/slide2.5.jpg" class="img-fluid" alt="Responsive image">
 						<!--Notebooks-->
-						<div class="container-fluid">
-							<a data-toggle="modal" data-target="#Not1">
-								<img src="../Imagens/Not1.jpg" alt="..." class="img-thumbnail" id="img1" onmouseover="this.src='../Imagens/Not1.1.png';" onmouseout="this.src='../Imagens/Not1.jpg';">
-							</a>
-							<a data-toggle="modal" data-target="#Not2">
-								<img src="../Imagens/Not2.jpg" alt="..." class="img-thumbnail" id="img2" onmouseover="this.src='../Imagens/Not2.1.jpg';" onmouseout="this.src='../Imagens/Not2.jpg';">
-							</a>
-							<a data-toggle="modal" data-target="#Not3">
-								<img src="../Imagens/Not3.jpg" alt="..." class="img-thumbnail" id="img3" onmouseover="this.src='../Imagens/Not3.1.png';" onmouseout="this.src='../Imagens/Not3.jpg';">
-							</a>
-							<a data-toggle="modal" data-target="#Not4">
-								<img src="../Imagens/Not4.jpg" alt="..." class="img-thumbnail" id="img4" onmouseover="this.src='../Imagens/Not4.1.jpg';" onmouseout="this.src='../Imagens/Not4.jpg';">
-							</a>
+						<div class="produtos">
+							<div class="grid">
+								<li>
+									<a data-toggle="modal" data-target="#Not1">
+										<img src="../Imagens/Not1.jpg" alt="..." class="img-thumbnail" id="img1">
+										<div class="preco">
+											<button>R$3.500,99</button>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a data-toggle="modal" data-target="#Not2">
+										<img src="../Imagens/Not2.jpg" alt="..." class="img-thumbnail" id="img2">
+										<div class="preco">
+											<button>R$3.500,99</button>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a data-toggle="modal" data-target="#Not3">
+										<img src="../Imagens/Not3.jpg" alt="..." class="img-thumbnail" id="img3">
+										<div class="preco">
+											<button>R$3.500,99</button>
+										</div>
+									</a>
+								</li>
+								<li>
+									<a data-toggle="modal" data-target="#Not4">
+										<img src="../Imagens/Not4.jpg" alt="..." class="img-thumbnail" id="img4">
+										<div class="preco">
+											<button>R$3.500,99</button>
+										</div>
+									</a>
+								</li>
+							</div>
 						</div>
 				</div>
 			</nav>

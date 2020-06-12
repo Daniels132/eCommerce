@@ -10,61 +10,11 @@ session_start();
   <title>Monitores</title>
   <link rel="shortcut icon" type="image/x-icon" href="../Imagens/Logo.jpg">
   <link href="../CSS/style.css" rel="stylesheet">
-  <link href="../CSS/estilo.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+  <link href="../CSS/produtos.css" rel="stylesheet">
+  <link href="../CSS/responsive.css" rel="stylesheet">
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-  <script>
-    function mudacor(obj, img) {
-      obj.src = img;
-    }
-
-    function iniciar() {
-      var obj1 = document.getElementById("img1");
-      var obj2 = document.getElementById("img2");
-      var obj3 = document.getElementById("img3");
-      var obj4 = document.getElementById("img4");
-      var obj5 = document.getElementById("img5");
-      var obj6 = document.getElementById("img6");
-      obj1.addEventListener("mouseover", function(event) {
-        mudacor(this, "../Imagens/Moni1.1.jpg");
-      });
-      obj1.addEventListener("mouseout", function(event) {
-        mudacor(this, "../Imagens/Moni1.jpg");
-      });
-      obj2.addEventListener("mouseover", function(event) {
-        mudacor(this, "../Imagens/Moni2.1.jpg");
-      });
-      obj2.addEventListener("mouseout", function(event) {
-        mudacor(this, "../Imagens/Moni2.jpg");
-      });
-      obj3.addEventListener("mouseover", function(event) {
-        mudacor(this, "../Imagens/Moni3.1.jpg");
-      });
-      obj3.addEventListener("mouseout", function(event) {
-        mudacor(this, "../Imagens/Moni3.jpg");
-      });
-      obj4.addEventListener("mouseover", function(event) {
-        mudacor(this, "../Imagens/Moni4.1.jpg");
-      });
-      obj4.addEventListener("mouseout", function(event) {
-        mudacor(this, "../Imagens/Moni4.jpg");
-      });
-      obj5.addEventListener("mouseover", function(event) {
-        mudacor(this, "../Imagens/Moni5.1.jpg");
-      });
-      obj5.addEventListener("mouseout", function(event) {
-        mudacor(this, "../Imagens/Moni5.jpg");
-      });
-      obj6.addEventListener("mouseover", function(event) {
-        mudacor(this, "../Imagens/Moni6.1.jpg");
-      });
-      obj6.addEventListener("mouseout", function(event) {
-        mudacor(this, "../Imagens/Moni6.jpg");
-      });
-    }
-    window.addEventListener("load", iniciar);
-  </script>
 </head>
 
 <body>
@@ -180,7 +130,7 @@ session_start();
                   </div>
                   <div class="modal-footer">
                     <form action="lg.php" method="POST" target="_blank">
-                      <input type="text" name="input" value="LG 20M37AA-B">
+                      <input type="hidden" name="input" value="LG 20M37AA-B">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                       <button type="submit" class="btn btn-primary">R$1.298,99</button>
                     </form>
@@ -217,7 +167,7 @@ session_start();
                   </div>
                   <div class="modal-footer">
                     <form action="lg.php" method="POST" target="_blank">
-                      <input type="text" name="input" value="LG Ultra amplo">
+                      <input type="hidden" name="input" value="LG Ultra amplo">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                       <button type="submit" class="btn btn-primary">R$1.298,99</button>
                     </form>
@@ -254,7 +204,7 @@ session_start();
                   </div>
                   <div class="modal-footer">
                     <form action="lg.php" method="POST" target="_blank">
-                      <input type="text" name="input" value="LG 20M37AA">
+                      <input type="hidden" name="input" value="LG 20M37AA">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                       <button type="submit" class="btn btn-primary">R$1.298,99</button>
                     </form>
@@ -291,7 +241,7 @@ session_start();
                   </div>
                   <div class="modal-footer">
                     <form action="lg.php" method="POST" target="_blank">
-                      <input type="text" name="input" value="FORTNITE">
+                      <input type="hidden" name="input" value="FORTNITE">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                       <button type="submit" class="btn btn-primary">R$1.298,99</button>
                     </form>
@@ -328,7 +278,7 @@ session_start();
                   </div>
                   <div class="modal-footer">
                     <form action="lg.php" method="POST" target="_blank">
-                      <input type="text" name="input" value="AOC 23 6 LED Full HD">
+                      <input type="hidden" name="input" value="AOC 23 6 LED Full HD">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                       <button type="submit" class="btn btn-primary">R$1.298,99</button>
                     </form>
@@ -365,7 +315,7 @@ session_start();
                   </div>
                   <div class="modal-footer">
                     <form action="lg.php" method="POST" target="_blank">
-                      <input type="text" name="input" value="AOC Led e970swnl">
+                      <input type="hidden" name="input" value="AOC Led e970swnl">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                       <button type="submit" class="btn btn-primary">R$1.298,99</button>
                     </form>
@@ -376,23 +326,57 @@ session_start();
             <img src="../Imagens/slide2.2.jpg" class="img-fluid" alt="Responsive image">
 
             <!--Monitores-->
-            <div class="container-fluid">
-              <a data-toggle="modal" data-target="#Moni1">
-                <img src="../Imagens/Moni1.jpg" alt="..." class="img" class="img-thumbnail" id="img1" onmouseover="this.src='../Imagens/Moni1.1.jpg';" onmouseout="this.src='../Imagens/Moni1.jpg';">
-              </a>
-              <a data-toggle="modal" data-target="#Moni2">
-                <img src="../Imagens/Moni2.jpg" alt="..." class="img" class="img-thumbnail" id="img2" onmouseover="this.src='../Imagens/Moni2.1.jpg';" onmouseout="this.src='../Imagens/Moni2.jpg';">
-              </a>
-              <a data-toggle="modal" data-target="#Moni3">
-                <img src="../Imagens/Moni3.jpg" alt="..." class="img" class="img-thumbnail" id="img3" onmouseover="this.src='../Imagens/Moni3.1.jpg';" onmouseout="this.src='../Imagens/Moni3.jpg';">
-                <a data-toggle="modal" data-target="#Moni4">
-                  <img src="../Imagens/Moni4.jpg" alt="..." class="img" class="img-thumbnail" id="img4" onmouseover="this.src='../Imagens/Moni4.1.jpg';" onmouseout="this.src='../Imagens/Moni4.jpg';">
-                </a>
-                <a data-toggle="modal" data-target="#Moni5">
-                  <img src="../Imagens/Moni5.jpg" alt="..." class="img" class="img-thumbnail" id="img5" onmouseover="this.src='../Imagens/Moni5.1.jpg';" onmouseout="this.src='../Imagens/Moni5.jpg';">
-                  <a data-toggle="modal" data-target="#Moni6">
-                    <img src="../Imagens/Moni6.jpg" alt="..." class="img" class="img-thumbnail" id="img6" onmouseover="this.src='../Imagens/Moni6.1.jpg';" onmouseout="this.src='../Imagens/Moni6.jpg';">
+            <div class="produtos">
+              <div class="grid">
+                <li>
+                  <a data-toggle="modal" data-target="#Moni1">
+                    <img src="../Imagens/Moni1.jpg" alt="..." class="img" class="img-thumbnail" id="img1">
+                    <div class="preco">
+                      <button>1.298,99</button>
+                    </div>
                   </a>
+                </li>
+                <li>
+                  <a data-toggle="modal" data-target="#Moni2">
+                    <img src="../Imagens/Moni2.jpg" alt="..." class="img" class="img-thumbnail" id="img2">
+                    <div class="preco">
+                      <button>1.298,99</button>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="modal" data-target="#Moni3">
+                    <img src="../Imagens/Moni3.jpg" alt="..." class="img" class="img-thumbnail" id="img3">
+                    <div class="preco">
+                      <button>1.298,99</button>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="modal" data-target="#Moni4">
+                    <img src="../Imagens/Moni4.jpg" alt="..." class="img" class="img-thumbnail" id="img4">
+                    <div class="preco">
+                      <button>1.298,99</button>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="modal" data-target="#Moni5">
+                    <img src="../Imagens/Moni5.jpg" alt="..." class="img" class="img-thumbnail" id="img5">
+                    <div class="preco">
+                      <button>1.298,99</button>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="modal" data-target="#Moni6">
+                    <img src="../Imagens/Moni6.jpg" alt="..." class="img" class="img-thumbnail" id="img6">
+                    <div class="preco">
+                      <button>1.298,99</button>
+                    </div>
+                  </a>
+                </li>
+              </div>
             </div>
         </div>
       </nav>

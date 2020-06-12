@@ -14,7 +14,7 @@ namespace Ecommerce
     public partial class frm_estoque : Form
     {
         string tabela = "estoque";
-        MySqlConnection objcon = new MySqlConnection("server=db4free.net;port=3306;User Id=ecommerceinfotec;database=infotec;password=RAfa2606");
+        MySqlConnection objcon = new MySqlConnection("server=infotecserver.mysql.database.azure.com;User Id=treze@infotecserver;database=infotec;password=13Solutions");
         public frm_estoque()
         {
             InitializeComponent();

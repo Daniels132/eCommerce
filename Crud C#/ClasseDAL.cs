@@ -10,7 +10,7 @@ namespace Ecommerce
 {
     class ClasseDAL
     {
-        string conectaBanco = "server=db4free.net;port=3306;User Id=ecommerceinfotec;database=infotec;password=RAfa2606";
+        string conectaBanco = "server=infotecserver.mysql.database.azure.com;User Id=treze@infotecserver;database=infotec;password=13Solutions";
 
         MySqlConnection conexao=null;
         MySqlCommand comando;

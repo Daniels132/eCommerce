@@ -10,76 +10,11 @@ session_start();
   <title>Perifericos</title>
   <link rel="shortcut icon" type="image/x-icon" href="../Imagens/Logo.jpg">
   <link href="../CSS/style.css" rel="stylesheet">
-  <link href="../CSS/estilo.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
+  <link href="../CSS/produtos.css" rel="stylesheet">
+  <link href="../CSS/responsive.css" rel="stylesheet">
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
-  <script>
-    function mudaimg(obj, img) {
-      obj.src = img;
-    }
-
-    function iniciar() {
-      var obj1 = document.getElementById("img1");
-      var obj2 = document.getElementById("img2");
-      var obj3 = document.getElementById("img3");
-      var obj4 = document.getElementById("img4");
-      var obj5 = document.getElementById("img5");
-      var obj6 = document.getElementById("img6");
-      var obj7 = document.getElementById("img7");
-      var obj8 = document.getElementById("img8");
-
-      obj1.addEventListener("mouseover", function(event) {
-        mudaimg(this, "../Imagens/PR1.1.jpg");
-      });
-      obj1.addEventListener("mouseout", function(event) {
-        mudaimg(this, "../Imagens/PR1.jpg");
-      });
-      obj2.addEventListener("mouseover", function(event) {
-        mudaimg(this, "../Imagens/PR2.1.jpg");
-      });
-      obj2.addEventListener("mouseout", function(event) {
-        mudaimg(this, "../Imagens/PR2.jpg");
-      });
-      obj3.addEventListener("mouseover", function(event) {
-        mudaimg(this, "../Imagens/PR3.1.jpg");
-      });
-      obj3.addEventListener("mouseout", function(event) {
-        mudaimg(this, "../Imagens/PR3.jpg");
-      });
-      obj4.addEventListener("mouseover", function(event) {
-        mudaimg(this, "../Imagens/PR4.1.jpg");
-      });
-      obj4.addEventListener("mouseout", function(event) {
-        mudaimg(this, "../Imagens/PR4.jpg");
-      });
-      obj5.addEventListener("mouseover", function(event) {
-        mudaimg(this, "../Imagens/PR5.1.jpg");
-      });
-      obj5.addEventListener("mouseout", function(event) {
-        mudaimg(this, "../Imagens/PR5.jpg");
-      });
-      obj6.addEventListener("mouseover", function(event) {
-        mudaimg(this, "../Imagens/PR6.1.jpg");
-      });
-      obj6.addEventListener("mouseout", function(event) {
-        mudaimg(this, "../Imagens/PR6.jpg");
-      });
-      obj7.addEventListener("mouseover", function(event) {
-        mudaimg(this, "../Imagens/PR7.1.jpg");
-      });
-      obj7.addEventListener("mouseout", function(event) {
-        mudaimg(this, "../Imagens/PR7.jpg");
-      });
-      obj8.addEventListener("mouseover", function(event) {
-        mudaimg(this, "../Imagens/PR8.1.jpg");
-      });
-      obj8.addEventListener("mouseout", function(event) {
-        mudaimg(this, "../Imagens/PR8.jpg");
-      });
-    }
-    window.addEventListener("load", iniciar);
-  </script>
 </head>
 
 <body>
@@ -188,7 +123,7 @@ session_start();
                   </div>
                   <div class="modal-footer">
                     <form action="lg.php" method="POST" target="_blank">
-                      <input type="text" name="input" value="HyperX Cloud Stinger">
+                      <input type="hidden" name="input" value="HyperX Cloud Stinger">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                       <button type="submit" class="btn btn-primary">R$150,99</button>
                     </form>
@@ -218,7 +153,7 @@ session_start();
                   </div>
                   <div class="modal-footer">
                     <form action="lg.php" method="POST" target="_blank">
-                      <input type="text" name="input" value="Warrior Ph219">
+                      <input type="hidden" name="input" value="Warrior Ph219">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                       <button type="submit" class="btn btn-primary">R$150,99</button>
                     </form>
@@ -255,7 +190,7 @@ session_start();
                   </div>
                   <div class="modal-footer">
                     <form action="lg.php" method="POST" target="_blank">
-                      <input type="text" name="input" value="Mouse Gamer Fortrek Spider">
+                      <input type="hidden" name="input" value="Mouse Gamer Fortrek Spider">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                       <button type="submit" class="btn btn-primary">R$150,99</button>
                     </form>
@@ -290,7 +225,7 @@ session_start();
                   </div>
                   <div class="modal-footer">
                     <form action="lg.php" method="POST" target="_blank">
-                      <input type="text" name="input" value="Mouser Gamer Fortrek M5">
+                      <input type="hidden" name="input" value="Mouser Gamer Fortrek M5">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                       <button type="submit" class="btn btn-primary">R$150,99</button>
                     </form>
@@ -321,7 +256,7 @@ session_start();
                   </div>
                   <div class="modal-footer">
                     <form action="lg.php" method="POST" target="_blank">
-                      <input type="text" name="input" value="Teclado Gamer Warrior">
+                      <input type="hidden" name="input" value="Teclado Gamer Warrior">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                       <button type="submit" class="btn btn-primary">R$150,99</button>
                     </form>
@@ -352,7 +287,7 @@ session_start();
                   </div>
                   <div class="modal-footer">
                     <form action="lg.php" method="POST" target="_blank">
-                      <input type="text" name="input" value="Fnatic Ministreak">
+                      <input type="hidden" name="input" value="Fnatic Ministreak">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                       <button type="submit" class="btn btn-primary">R$150,99</button>
                     </form>
@@ -376,7 +311,7 @@ session_start();
                   </div>
                   <div class="modal-footer">
                     <form action="lg.php" method="POST" target="_blank">
-                      <input type="text" name="input" value="Multilaser Warrior Gamer PH101">
+                      <input type="hidden" name="input" value="Multilaser Warrior Gamer PH101">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                       <button type="submit" class="btn btn-primary">R$150,99</button>
                     </form>
@@ -401,7 +336,7 @@ session_start();
                   </div>
                   <div class="modal-footer">
                     <form action="lg.php" method="POST" target="_blank">
-                      <input type="text" name="input" value="Joystick ps4">
+                      <input type="hidden" name="input" value="Joystick ps4">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                       <button type="submit" class="btn btn-primary">R$150,99</button>
                     </form>
@@ -411,32 +346,75 @@ session_start();
             </div>
 
             <img src="../Imagens/slide2.1.jpg" class="img-fluid" alt="Responsive image">
-            <!--Periféricos-->
-            <div class="container-fluid">
-              <a data-toggle="modal" data-target="#PR1">
-                <img src="../Imagens/PR1.jpg" alt="..." class="img-thumbnail" id="img1">
-              </a>
-              <a data-toggle="modal" data-target="#PR2">
-                <img src="../Imagens/PR2.jpg" alt="..." class="img-thumbnail" id="img2">
-              </a>
-              <a data-toggle="modal" data-target="#PR3">
-                <img src="../Imagens/PR3.jpg" alt="..." class="img-thumbnail" id="img3">
-              </a>
-              <a data-toggle="modal" data-target="#PR4">
-                <img src="../Imagens/PR4.jpg" alt="..." class="img-thumbnail" id="img4">
-              </a>
-              <a data-toggle="modal" data-target="#PR5">
-                <img src="../Imagens/PR5.jpg" alt="..." class="img-thumbnail" id="img5">
-              </a>
-              <a data-toggle="modal" data-target="#PR6">
-                <img src="../Imagens/PR6.jpg" alt="..." class="img-thumbnail" id="img6">
-              </a>
-              <a data-toggle="modal" data-target="#PR7">
-                <img src="../Imagens/PR7.jpg" alt="..." class="img-thumbnail" id="img7">
-              </a>
-              <a data-toggle="modal" data-target="#PR8">
-                <img src="../Imagens/PR8.jpg" alt="..." class="img-thumbnail" id="img8">
-              </a>
+            <div class="produtos">
+              <!--Periféricos-->
+              <div class="grid">
+                <li>
+                  <a data-toggle="modal" data-target="#PR1">
+                    <img src="../Imagens/PR1.jpg" alt="..." class="img-thumbnail" id="img1">
+                    <div class="preco">
+                      <button>R$150,99</button>
+                    </div>
+                  </a>
+                </li>
+
+                <li>
+                  <a data-toggle="modal" data-target="#PR2">
+                    <img src="../Imagens/PR2.jpg" alt="..." class="img-thumbnail" id="img2">
+                    <div class="preco">
+                      <button>R$150,99</button>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="modal" data-target="#PR3">
+                    <img src="../Imagens/PR3.jpg" alt="..." class="img-thumbnail" id="img3">
+                    <div class="preco">
+                      <button>R$150,99</button>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="modal" data-target="#PR4">
+                    <img src="../Imagens/PR4.jpg" alt="..." class="img-thumbnail" id="img4">
+                    <div class="preco">
+                      <button>R$150,99</button>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="modal" data-target="#PR5">
+                    <img src="../Imagens/PR5.jpg" alt="..." class="img-thumbnail" id="img5">
+                    <div class="preco">
+                      <button>R$150,99</button>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="modal" data-target="#PR6">
+                    <img src="../Imagens/PR6.jpg" alt="..." class="img-thumbnail" id="img6">
+                    <div class="preco">
+                      <button>R$150,99</button>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="modal" data-target="#PR7">
+                    <img src="../Imagens/PR7.jpg" alt="..." class="img-thumbnail" id="img7">
+                    <div class="preco">
+                      <button>R$150,99</button>
+                    </div>
+                  </a>
+                </li>
+                <li>
+                  <a data-toggle="modal" data-target="#PR8">
+                    <img src="../Imagens/PR8.jpg" alt="..." class="img-thumbnail" id="img8">
+                    <div class="preco">
+                      <button>R$150,99</button>
+                    </div>
+                  </a>
+                </li>
+              </div>
             </div>
         </div>
       </nav>
